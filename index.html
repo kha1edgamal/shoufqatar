@@ -10,6 +10,8 @@
     <title>Shouf Qatar</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="imgs/logo.png">
+    <!--DatePicker-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -45,8 +47,8 @@
         </div>
     </div>
     <!--End Preloader Section-->
-
-    <!--Start Header Section-->
+    <div class="page-container filter-pg">
+         <!--Start Header Section-->
     <header>
         <div class="custom-container">
             <div class="d-flex-sb">
@@ -71,7 +73,6 @@
                 </div>
             </div>
         </div>
-        <hr>
     </header>
     <!--End Header Section-->
 
@@ -102,7 +103,12 @@
                                 <div class="s-input">
                                    <!--Note here-->
                                     <label for="date">EXPERIENCE DATE</label>
-                                    <input type="text" id='date' placeholder="When you want to do an activity">
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <input type="text" placeholder="When you want to do an activity">
+                                        <div class="input-group-addon">
+                                            <i class="fas fa-calendar-week"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-3">
@@ -133,7 +139,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-1.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%"   muted loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -167,7 +173,7 @@
                            <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-2.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%"  muted loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -201,7 +207,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-3.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%"  muted loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -235,7 +241,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-4.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%"  muted loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -269,7 +275,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-1.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%" muted  loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -303,7 +309,7 @@
                            <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-2.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%" muted  loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -337,7 +343,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-3.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%" muted  loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -371,7 +377,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-4.jpg"  alt="">
-                                      <video height="500px" width="100%"   loop>
+                                      <video height="500px" width="100%" muted  loop>
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -412,6 +418,9 @@
 
     </main>
     <!--End Main Section-->
+    </div>
+
+
 
 
     <!--Jquery Minified JS-->
@@ -427,10 +436,16 @@
     <!--ScrollBar-->
     <script src="js/jquery.smoothscroll.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
     <!--Main Script-->
     <script src="js/script.js"></script>
 
-
+<script>
+    $('.datepicker').datepicker({
+    format: 'mm/dd/yyyy',
+    startDate: '-3d'
+});
+    </script>
 
 
 </body>

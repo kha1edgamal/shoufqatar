@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.category-select').select2({
-      width: "50%"
+      width: "50%",
   });
     const videos = document.querySelectorAll("video");
 
