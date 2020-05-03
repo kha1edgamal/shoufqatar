@@ -404,6 +404,10 @@ header .list-nav ul li:last-child a:hover{
 .filter-content .single{
     margin-bottom: 50px
 }
+.filter-content .single .modal-body video{
+    width: 100%;
+    height: 100%
+}
  .video-play{
     position: absolute;
     bottom: 20px;
@@ -553,7 +557,7 @@ header .list-nav ul li:last-child a:hover{
 
 }
 .login-register-pg .mid-sec{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 40px
 }
 .login-register-pg .mid-sec .s-input label{
@@ -570,8 +574,11 @@ header .list-nav ul li:last-child a:hover{
     height: 50px;
     line-height: 50px;
     padding-left: 45px;
-    width: 95%;
+    width: 664px;
     transition: all .3s
+}
+.login-register-pg .mid-sec form .reg-inp input{
+    width: 303px;
 }
 .login-register-pg .mid-sec form input[type=text]:focus,
 .login-register-pg .mid-sec form input[type=password]:focus,
@@ -594,7 +601,7 @@ header .list-nav ul li:last-child a:hover{
 }
 .login-register-pg .mid-sec form .s-input .password a{
     position: absolute;
-    right: 60px;
+    right: 90px;
     top: 15px;
     display: inline;
     width: unset;
@@ -618,7 +625,12 @@ header .list-nav ul li:last-child a:hover{
 .login-register-pg .mid-sec form .s-input h5 a:hover{
     text-decoration: underline
 }
-
+.login-register-pg .bottom-sec{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 0
+}
 .login-register-pg .checkbox {
     width: 100%;
     margin: 15px auto;
@@ -701,6 +713,9 @@ header .list-nav ul li:last-child a:hover{
     font-weight: 600;
     width: unset
 }
+.login-register-pg .bottom-sec p a.proceed.reg{
+    display: inline-block;
+}
 .login-register-pg .bottom-sec p a:hover{
     text-decoration: underline
 }
@@ -740,7 +755,7 @@ header .list-nav ul li:last-child a:hover{
 }
 .login-register-pg .pic h1{
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     width: 300px;
     color: #fff;
     left: 20px;
@@ -752,7 +767,7 @@ header .list-nav ul li:last-child a:hover{
     width: 100%
 }
 .login-register-pg .video-play{
-    bottom: 52px;
+    bottom: 93px;
     right: 90px;
     left: unset;
 }
