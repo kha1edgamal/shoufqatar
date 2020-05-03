@@ -1,9 +1,13 @@
 $(document).ready(function () {
+
+    //Start Owl Carousel
   $('.category-select').select2({
       width: "50%",
   });
-    const videos = document.querySelectorAll(".hoverVideo");
+    //End Owl Carousel
 
+    //Start Video Play On Hover
+    const videos = document.querySelectorAll(".hoverVideo");
 videos.forEach((video) => {
   video.addEventListener("mouseover", function () {
     this.play();
@@ -38,4 +42,16 @@ videos.forEach((video) => {
       $(this).siblings('.video-play').children('span').children('i').addClass('fas fa-play');
   });
 });
+    //End video play on hover
+
+    //Start Mobile Navigation Slide Down
+    $(".mobile-nav .slide-btn").click(function(){
+        $(".slide-panel").slideToggle("slow");
+    });
+    var $toggleButton = $('.toggle-button');
+
+  // Hamburger button
+  $toggleButton.on('click', function() {
+    $(this).toggleClass('button-open');
+  });
 });

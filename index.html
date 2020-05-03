@@ -51,7 +51,8 @@
          <!--Start Header Section-->
     <header>
         <div class="custom-container">
-            <div class="d-flex-sb">
+           <!--Screen Nav-->
+            <div class="screen-nav d-flex-sb">
                 <div class="logo">
                     <img src="imgs/logo.png" alt="">
                 </div>
@@ -64,14 +65,41 @@
                             <a href="#">Host Your Experience</a>
                         </li>
                         <li>
-                            <a href="#">login</a>
+                            <a href="login.html">login</a>
                         </li>
                         <li>
-                            <a href="#">create new account</a>
+                            <a href="register.html">create new account</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <!--/Screen Nav-->
+
+            <!--Mobile Nav-->
+            <div class="mobile-nav ">
+               <div class="d-flex-sb">
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                    </div>
+                   <div class="toggle-button slide-btn">
+                       <div class="wrapper">
+                           <div class="menu-bar menu-bar-top"></div>
+                           <div class="menu-bar menu-bar-middle"></div>
+                           <div class="menu-bar menu-bar-bottom"></div>
+                       </div>
+                   </div>
+               </div>
+               <div class="slide-panel " style="display: none">
+                   <ul>
+                       <li><a href="#">Explore Experience</a></li>
+                       <li><a href="#">Host Your Experience</a></li>
+                       <li><a href="login.html">Login</a></li>
+                       <li><a href="register.html">Create New Account</a></li>
+                   </ul>
+               </div>
+
+            </div>
+            <!--/Mobile Nav-->
         </div>
     </header>
     <!--End Header Section-->
@@ -93,13 +121,13 @@
                 <div class="search-box">
                     <form action="">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
                                 <div class="s-input">
                                     <label for="location">location</label>
                                     <input type="text" id='location' placeholder="Enter address, landmark in Qatar">
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
                                 <div class="s-input">
                                    <!--Note here-->
                                     <label for="date">EXPERIENCE DATE</label>
@@ -111,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
                                 <div class="s-input">
                                     <label for="category">category</label>
                                     <select class="category-select" name="state" id='category'>
@@ -122,7 +150,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
                                 <div class="s-input text-right">
                                     <button>Filter</button>
                                 </div>
@@ -177,7 +205,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop >
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -229,7 +257,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop >
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -281,7 +309,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop>
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -333,7 +361,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop >
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -347,7 +375,7 @@
                             <div class="single">
                                 <div class="pic">
                                       <img class="poster" src="imgs/exp-1.jpg"  alt="">
-                                      <video class="hoverVideo" height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                      <video class="hoverVideo" height="500px" width="100%"   muted loop >
                                           <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                       </video>
                                     <div class="video-play">
@@ -385,7 +413,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop >
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -437,7 +465,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop>
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -489,7 +517,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop >
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
@@ -541,7 +569,7 @@
                                                </button>
                                            </div>
                                             <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
+                                                <video controls  height="500px" width="100%"   muted loop >
                                                      <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
                                               </video>
                                             </div>
