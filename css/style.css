@@ -594,9 +594,11 @@ header .mobile-nav .slide-panel li:last-child a{
 
 
 }
+/*
 .login-register-pg main > * {
     padding-left: 40px;
 }
+*/
 .login-register-pg .top-sec .sign-options a{
     background: #518ef8;
     height: 50px;

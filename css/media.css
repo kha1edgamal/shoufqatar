@@ -14,7 +14,7 @@
 
 }
 @media(max-width:991px){
-    main{
+    .login-register-pg main{
         position: relative;
         width: 100%;
         height: 100%;
@@ -98,6 +98,9 @@
     .login-register-pg .bottom-sec .proceed{
         border: none !important
     }
+        .filter-pg main .top-desc p{
+        width: 100%
+    }
 
 }
 @media(max-width:768px){
@@ -109,7 +112,9 @@
     }
 }
 @media(max-width:520px){
-
+    .login-register-pg main{
+        width: 100%
+    }
 }
 @media(max-width:425px){
     .filter-pg main .top-desc p{
@@ -125,6 +130,9 @@
     .filter-pg video,
     .filter-pg img.poster{
         height: 400px;
+    }
+    .login-register-pg .top-sec h1{
+        font-size: 28px
     }
 
 }
