@@ -14,6 +14,9 @@
 
 }
 @media(max-width:991px){
+    .reset-pg header .screen-nav{
+        display: block !important
+    }
     .login-register-pg .top-sec:before{
         left: 50%;
         transform: translate(-50%)
@@ -120,10 +123,10 @@
         .custom-container{
         padding: 0 20px;
     }
-    .login-register-pg .verify-container .modal .modal-dialog{
-        max-width: 500px
+    .login-register-pg .modal-container .modal .modal-dialog{
+        max-width: 540px
     }
-    .login-register-pg .verify-container .modal-body form p{
+    .login-register-pg .modal-container .modal-body form p{
         padding: 0
     }
 }
@@ -131,8 +134,14 @@
     .login-register-pg main{
         width: 100%
     }
+    .reset-pg form{
+        width: 100%;
+    }
 }
 @media(max-width:425px){
+    .login-register-pg .modal-open .modal{
+        padding-left: 0 !important
+    }
     .filter-pg main .s-input button{
         width: 100%
     }
@@ -154,13 +163,23 @@
         font-size: 28px
     }
     .login-register-pg .modal-body form .verify-pic{
-        width: 300px;
+        width: 100%;
         height: 200px;
     }
-    .login-register-pg .verify-container .modal-body form h3{
+    .login-register-pg .modal-body form .verify-pic .i-2{
+        left: 36%;
+        top: 20%;
+        width: 140px
+    }
+    .login-register-pg .modal-body form .verify-pic #m-check-mark{
+        left: 57%;
+        width: 25px
+    }
+
+    .login-register-pg .modal-container .modal-body form h3{
         font-size: 16px
     }
-    .login-register-pg .verify-container .modal-body form p{
+    .login-register-pg .modal-container .modal-body form p{
         font-size: 12px
     }
     .login-register-pg main{
@@ -171,6 +190,10 @@
     }
     .congrats-pg .congrats-container p{
         font-size: 14px
+    }
+    .reset-pg form h1{
+        font-size: 25px;
+        margin-bottom: 20px
     }
 
 }

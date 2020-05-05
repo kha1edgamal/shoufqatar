@@ -103,7 +103,7 @@
                                  <img src="imgs/key-icon.png" alt="">
                                  <a href="#"><i class="fas fa-eye-slash"></i></a>
                              </div>
-                             <h5>I can’t remember my password, <a href="#">Forget Password</a></h5>
+                             <h5>I can’t remember my password, <a href="#" data-toggle="modal" data-target="#forgetPassword">Forget Password</a></h5>
                          </div>
                          <div class="s-input checkbox">
                              <input type="checkbox" id='checkbox'>
@@ -111,6 +111,27 @@
                          </div>
                      </form>
                  </div>
+                 <!-- Modal - Preset-->
+                   <div class="modal-container forget-modal">
+                       <div class="modal fade" id="forgetPassword" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-header">
+                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true"><img src="imgs/close.png" alt=""></span>
+                                       </button>
+                                   </div>
+                                   <div class="modal-body">
+                                       <h6>Forget My Password</h6>
+                                       <h1>Reset Password</h1>
+                                       <p>We’ve sent you a password recovery email, check your inbox to reset your password. Check your junk folder</p>
+                                       <a href="#" class="proceed" data-dismiss="modal" aria-label="Close">OK GOT IT</a>
+                                   </div>
+
+                               </div>
+                           </div>
+                       </div>
+                   </div>
              </section>
              <!--/Middle Section-->
 

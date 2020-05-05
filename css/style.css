@@ -575,6 +575,9 @@ header .mobile-nav .slide-panel li:last-child a{
     position: relative;
     padding-bottom: 30px
 }
+.login-register-pg header:after{
+    display: none
+}
 .login-register-pg .top-sec:after{
     position: absolute;
     left: 0;
@@ -587,7 +590,7 @@ header .mobile-nav .slide-panel li:last-child a{
 .login-register-pg .top-sec:before{
     content: 'Or';
     position: absolute;
-    left: 47%;
+    left: 44%;
     bottom: -10px;
     width: 50px;
     height: 20px;
@@ -651,13 +654,14 @@ header .mobile-nav .slide-panel li:last-child a{
     margin-top: 40px;
     margin-bottom: 40px
 }
-.login-register-pg .mid-sec .s-input label{
+.login-register-pg  .s-input label,
+{
     color: #34495e;
     font-weight: 600;
     margin-bottom: 10px;
 
 }
-.login-register-pg .mid-sec form input:not([type="checkbox"]){
+.login-register-pg  form input:not([type="checkbox"]){
     border: 1px solid #ecf0f1;
     border-radius: 10px;
     height: 50px;
@@ -666,27 +670,29 @@ header .mobile-nav .slide-panel li:last-child a{
     width: 686px;
     transition: all .3s
 }
-.login-register-pg .mid-sec form .reg-inp input{
+.login-register-pg  form .reg-inp input{
     width: 303px;
 }
-.login-register-pg .mid-sec form input:not([type="checkbox"]):focus{
+.login-register-pg  form input:not([type="checkbox"]):focus{
     border: 1px solid #518ef8;
     transition: all .3s;
     outline: none
 }
-.login-register-pg .mid-sec form .s-input:not(:last-of-type){
+/*
+.login-register-pg  form .s-input:not(:last-of-type){
     margin-bottom: 30px
 }
-.login-register-pg .mid-sec .inp{
+*/
+.login-register-pg  .inp{
     position: relative;
 }
-.login-register-pg .mid-sec .inp img{
+.login-register-pg  .inp img{
     position: absolute;
     left: 15px;
     top: 18px;
     width: 20px;
 }
-.login-register-pg .mid-sec form .s-input .password a{
+.login-register-pg  form .s-input .password a{
     position: absolute;
     right: 70px;
     top: 15px;
@@ -695,21 +701,21 @@ header .mobile-nav .slide-panel li:last-child a{
     color: #95a5a6;
     transition: all .3s
 }
-.login-register-pg .mid-sec form .s-input .password a:hover{
+.login-register-pg  form .s-input .password a:hover{
     transition: all .3s;
     color: #000
 }
-.login-register-pg .mid-sec form .s-input h5{
+.login-register-pg  form .s-input h5{
     font-size: 13px;
     margin-top: 15px;
     color: #34495e
 }
-.login-register-pg .mid-sec form .s-input h5 a{
+.login-register-pg  form .s-input h5 a{
     display: inline;
     color: #4291e0
 
 }
-.login-register-pg .mid-sec form .s-input h5 a:hover{
+.login-register-pg  form .s-input h5 a:hover{
     text-decoration: underline
 }
 .login-register-pg .bottom-sec{
@@ -874,49 +880,60 @@ header .mobile-nav .slide-panel li:last-child a{
 
 
 .login-register-pg .s-input{
-    margin-bottom: 30px
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 30px;
+}
+.login-register-pg .s-input span.guide{
+    color: #95a5a6;
+    font-size: 12px
+}
+.login-register-pg .s-input.error span.guide{
+    display: none !important
 }
 .login-register-pg .s-input span.error-msg{
-    display: none
+    display: none;
 }
+
 .login-register-pg .s-input.error span.error-msg{
-    display: block;
     position: absolute;
+    display: block !important
 }
 .login-register-pg header{
     padding: 20px 0
 }
-.login-register-pg .mid-sec form .s-input.error span{
-    display: block;
+.login-register-pg  form .s-input.error span{
+    display: block !important;
     color: #dc4343;
     font-size: 12px;
     position: absolute;
     bottom: 6px
 }
-.login-register-pg .mid-sec form .s-input.error input:not([type="checkbox"]) {
+.login-register-pg form .s-input.error input:not([type="checkbox"]) {
     border-color: #dc4343;
 
 }
 
 
 .login-register-pg .modal-body form  .verify-pic {
-    width: 350px;
+    width: 460px;
     height: 250px;
     margin: auto;
     overflow: hidden;
+    position: relative
 }
 .login-register-pg .modal-body form  .verify-pic  img{
     max-width: 100%;
     max-height: 100%;
 
 }
-.login-register-pg .verify-container .modal-body form  h3{
+.login-register-pg .modal-container .modal-body form  h3{
     font-size: 20px;
     margin: 20px 0;
     text-align: center;
     font-family: p-sb;
 }
-.login-register-pg .verify-container .modal-body form  p{
+.login-register-pg .modal-container .modal-body form  p{
     font-family: p-reg;
     color: #34495e;
     text-align: center;
@@ -924,11 +941,11 @@ header .mobile-nav .slide-panel li:last-child a{
     padding: 0 30px;
     font-size: 17px;
 }
-.login-register-pg .verify-container .modal-body form  .digits{
+.login-register-pg .modal-container .modal-body form  .digits{
     text-align: center;
     margin-bottom: 25px
 }
-.login-register-pg .verify-container .modal-body form  .digits input{
+.login-register-pg .modal-container .modal-body form  .digits input{
         display: inline-block;
     width: 35px;
     height: 55px;
@@ -941,13 +958,13 @@ header .mobile-nav .slide-panel li:last-child a{
     color: #1a242e;
     font-size: 34px;
 }
-.login-register-pg .verify-container .modal-body form  .digits input:not(:last-of-type){
+.login-register-pg .modal-container .modal-body form  .digits input:not(:last-of-type){
     margin-right: 10px
 }
-.login-register-pg .verify-container .modal-body form  .digits input:focus{
+.login-register-pg .modal-container .modal-body form  .digits input:focus{
     outline: none
 }
-.login-register-pg .verify-container .modal-body form  .bottom h5{
+.login-register-pg .modal-container .modal-body form  .bottom h5{
     color: #34495e;
     font-size: 15px;
     font-family: p-reg;
@@ -955,33 +972,64 @@ header .mobile-nav .slide-panel li:last-child a{
     padding-right: 10px;
 
 }
-.login-register-pg .verify-container .modal-body form  .bottom h5 a{
+.login-register-pg .modal-container .modal-body form  .bottom h5 a{
     display: inline-block;
     color: #34495e;
     width: unset;
     color: #ed4d12;
     font-family: p-med
 }
-.login-register-pg .verify-container .modal-body form  .bottom h5 a:hover{
+.login-register-pg .modal-container .modal-body form  .bottom h5 a:hover{
     text-decoration: underline
 }
-.login-register-pg .verify-container .modal  .modal-dialog{
+.login-register-pg .modal-container .modal  .modal-dialog{
     max-width: 700px;
 }
-.login-register-pg .verify-container .modal .modal-header{
+.login-register-pg .modal-container .modal .modal-header{
     border-bottom: 0;
     padding: 10px 0 0 0;
 }
-.login-register-pg .verify-container .modal .modal-header button:focus{
+.login-register-pg .modal-container .modal .modal-header button:focus{
     outline: none;
 }
 
-.login-register-pg .verify-container .modal .modal-header button{
+.login-register-pg .modal-container .modal .modal-header button{
     outline: none
 }
-.login-register-pg .verify-container .modal  .modal-dialog .modal-content{
+.login-register-pg .modal-container .modal  .modal-dialog .modal-content{
     border-radius: 20px;
     padding: 10px 20px
+}
+.login-register-pg .forget-modal .modal-header{
+    position: absolute;
+    right: 20px;
+}
+.login-register-pg .forget-modal .modal-body{
+    text-align: center
+}
+.login-register-pg .forget-modal .modal-body h6{
+    color: #95a5a6;
+    font-size: 12px;
+    font-family: p-med;
+    margin-bottom: 10px
+}
+.login-register-pg .forget-modal .modal-body h1{
+    color: #ed4d12;
+    margin-bottom: 20px;
+    padding: 0 70px;
+}
+.login-register-pg .forget-modal .modal-body p{
+    color: #34495e;
+    margin-bottom: 20px;
+}
+.login-register-pg .forget-modal .modal-body a.proceed{
+        display: inline-block;
+    width: 250px;
+    background: #ed4d12;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px;
 }
 
 /*End Login & Register Pages*/
@@ -1049,3 +1097,128 @@ footer h5{
     font-size: 12px
 }
 /*End Footer Style*/
+/*Verify Modal Animation*/
+.login-register-pg .modal-body form .verify-pic #m-check-mark {
+   width: 30px;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 56%;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+
+.login-register-pg .modal-body form .verify-pic #checkmark {
+  stroke-dasharray: 640;
+    stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: draw-around 3s infinite;
+      -ms-animation: draw-around 3s infinite;
+          animation: draw-around 3s infinite;
+    animation-iteration-count: 1;
+}
+@-ms-keyframes draw-around {
+  0% {
+    stroke-dashoffset: 640;
+  }
+  10% {
+    stroke-dashoffset: 640;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw-around {
+  0% {
+    stroke-dashoffset: 640;
+  }
+  10% {
+    stroke-dashoffset: 640;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-around {
+  0% {
+    stroke-dashoffset: 640;
+  }
+  10% {
+    stroke-dashoffset: 640;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.login-register-pg .modal-body form .verify-pic .i-1{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: static;
+}
+.login-register-pg .modal-body form .verify-pic .i-2{
+        z-index: 1;
+    left: 38%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    width: 170px;
+    -webkit-animation: spin 8s infinite linear;
+
+
+}
+.login-register-pg .modal-body form .verify-pic .i-3{
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-register-pg .modal-body form .verify-pic img{
+    position: absolute;
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+/*/Verify Modal Animation*/
+
+/*STart Forget Style*/
+.reset-pg form{
+    width: 520px;
+    margin: 40px auto 40px auto;
+}
+.reset-pg .bottom-sec{
+    position: static;
+    width: 100%;
+    left: unset;
+    bottom: unset;
+    text-align: right
+}
+.reset-pg form h1 {
+        color: #ed4d12;
+    font-family: p-bold;
+    margin-bottom: 40px;
+}
+.reset-pg form input:not([type="checkbox"]){
+    width: 100%
+}
+.reset-pg form .password a {
+    right: 20px !important
+}
+.reset-pg .reset-password{
+    margin-bottom: 40px
+}
+/*End Forget Style */
