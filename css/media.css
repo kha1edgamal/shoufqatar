@@ -14,19 +14,20 @@
 
 }
 @media(max-width:991px){
+    .login-register-pg .top-sec:before{
+        left: 50%;
+        transform: translate(-50%)
+    }
     .login-register-pg .bottom-sec{
         position: static;
         left: unset;
         margin-bottom: 20px;
     }
     .login-register-pg main{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 30px;
-        width: 560px;
-        border-radius: 30px;
-        margin: auto auto 40px auto
+            position: relative;
+    width: 560px;
+    border-radius: 30px;
+    margin: 40px auto 40px auto;
     }
     .mobile-bg-video{
         display: block;
@@ -46,13 +47,12 @@
     }
     .login-register-pg .form-container{
         width: 100%;
-        height: 100%;
         background: #ffffffc9;
         display: block;
         position: relative;
         padding-left: 0 !important;
-        margin: auto;
         padding: 20px 0;
+        border-radius: 30px
 
 
     }
@@ -82,10 +82,14 @@
     .login-register-pg .top-sec:after{
         width: 100%
     }
+
+    .login-register-pg .top-sec .sign-options a{
+        margin: auto;
+    }
     .login-register-pg .sign-options .col-lg-6:nth-child(1){
         margin-bottom: 20px
     }
-    .login-register-pg .mid-sec form .reg-inp input{
+    .login-register-pg .mid-sec form .reg-inp input:not([type="checkbox"]){
         width: 100%
     }
     .login-register-pg .mid-sec form .s-input .password a{
@@ -105,7 +109,9 @@
         .filter-pg main .top-desc p{
         width: 100%
     }
-
+    .congrats-pg .congrats-container p{
+        padding: 0
+    }
 }
 @media(max-width:768px){
     .filter-pg main .top-desc p{
@@ -114,6 +120,12 @@
         .custom-container{
         padding: 0 20px;
     }
+    .login-register-pg .verify-container .modal .modal-dialog{
+        max-width: 500px
+    }
+    .login-register-pg .verify-container .modal-body form p{
+        padding: 0
+    }
 }
 @media(max-width:520px){
     .login-register-pg main{
@@ -121,6 +133,9 @@
     }
 }
 @media(max-width:425px){
+    .filter-pg main .s-input button{
+        width: 100%
+    }
     .filter-pg main .top-desc p{
         font-size: 15px;
     }
@@ -137,6 +152,25 @@
     }
     .login-register-pg .top-sec h1{
         font-size: 28px
+    }
+    .login-register-pg .modal-body form .verify-pic{
+        width: 300px;
+        height: 200px;
+    }
+    .login-register-pg .verify-container .modal-body form h3{
+        font-size: 16px
+    }
+    .login-register-pg .verify-container .modal-body form p{
+        font-size: 12px
+    }
+    .login-register-pg main{
+        height: 100%
+    }
+    .congrats-pg .congrats-container h1{
+        font-size: 24px;
+    }
+    .congrats-pg .congrats-container p{
+        font-size: 14px
     }
 
 }

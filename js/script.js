@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+new WOW().init();
     //Start Owl Carousel
   $('.category-select').select2({
       width: "50%",

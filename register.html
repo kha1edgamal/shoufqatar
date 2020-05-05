@@ -75,7 +75,7 @@
             <!--Top Section-->
              <section class="top-sec">
                 <div class="custom-container">
-                     <h1>Create New Account</h1>
+                     <h1 class="">Create New Account</h1>
                      <div class="sign-options">
                         <div class="row">
                             <div class="col-lg-6">
@@ -121,12 +121,13 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="s-input">
+                                <div class="s-input error">
                                     <label for="email">Email Address</label>
                                     <div class="inp reg-inp">
                                         <input type="email" id="email" placeholder="Enter Email ">
                                         <img src="imgs/mail-icon.png" alt="">
                                     </div>
+                                    <span class="error-msg">This email is already registered!</span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -180,12 +181,58 @@
                              </p>
                          </div>
                          <div class="col-lg-6">
-                             <a href="#" class="proceed">
+                             <a href="#" class="proceed" data-toggle="modal" data-target="#phoneVerify">
                                  Create New Account
                              </a>
                          </div>
                      </div>
                  </div>
+                 <!-- Modal - Verify Phone Number-->
+                   <div class="verify-container">
+                       <div class="modal fade" id="phoneVerify" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-header">
+                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true"><img src="imgs/close.png" alt=""></span>
+                                       </button>
+                                   </div>
+                                   <div class="modal-body">
+                                       <form action="">
+                                           <div class="verify-pic">
+                                               <img src="imgs/verify-pic.png" alt="">
+                                           </div>
+                                           <h3>Verify your phone number +20*******582</h3>
+                                           <p>
+                                               We’re almost done! We want to make sure the phone number you provided is correct. We’ve sent you a verification code, please write the code you received down below. <a href="#">Change My Number</a>
+                                           </p>
+                                           <div class="digits">
+                                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                           </div>
+                                           <div class="bottom">
+                                               <div class="row">
+                                                   <div class="col-lg-6">
+                                                       <h5>
+                                                           If you didn’t receive the confirmation code SMS, click <a href="#">Resend Code</a>
+                                                       </h5>
+                                                   </div>
+                                                   <div class="col-lg-6">
+                                                       <a href="congratulation.html" class="proceed" >
+                                                           Create New Account
+                                                       </a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           </form>
+                                   </div>
+
+                               </div>
+                           </div>
+                       </div>
+                   </div>
              </section>
              <!--/Bottom Section-->
            </div>

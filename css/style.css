@@ -171,6 +171,17 @@ select {
 .animated {
     animation-duration: 2s;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .custom-container{
     padding-left: 70px;
     padding-right: 70px;
@@ -223,13 +234,17 @@ select {
   font-family: dm-reg;
   src: url(../fonts/DMSans-Regular.ttf);
 }
+@font-face {
+  font-family: p-sb;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
 
 /*Start header style*/
  header{
     padding: 30px 0;
     position: relative
 }
-.filter-pg  header:after{
+header:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -555,10 +570,7 @@ header .mobile-nav .slide-panel li:last-child a{
 /*End Main Style*/
 
 /*Login Page Style*/
-.login-register-pg header img{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
+
 .login-register-pg .top-sec{
     position: relative;
     padding-bottom: 30px
@@ -588,7 +600,7 @@ header .mobile-nav .slide-panel li:last-child a{
 
 }
 .login-register-pg .top-sec h1{
-    color: #1a242e;
+    color: #ed4d12;
     font-weight: bold;
     margin: 20px 0 30px 0;
 
@@ -645,25 +657,19 @@ header .mobile-nav .slide-panel li:last-child a{
     margin-bottom: 10px;
 
 }
-.login-register-pg .mid-sec form input[type=text],
-.login-register-pg .mid-sec form input[type=password],
-.login-register-pg .mid-sec form input[type=email],
-.login-register-pg .mid-sec form input[type=number]{
+.login-register-pg .mid-sec form input:not([type="checkbox"]){
     border: 1px solid #ecf0f1;
     border-radius: 10px;
     height: 50px;
     line-height: 50px;
     padding-left: 45px;
-    width: 664px;
+    width: 686px;
     transition: all .3s
 }
 .login-register-pg .mid-sec form .reg-inp input{
     width: 303px;
 }
-.login-register-pg .mid-sec form input[type=text]:focus,
-.login-register-pg .mid-sec form input[type=password]:focus,
-.login-register-pg .mid-sec form input[type=email]:focus,
-.login-register-pg .mid-sec form input[type=number]:focus{
+.login-register-pg .mid-sec form input:not([type="checkbox"]):focus{
     border: 1px solid #518ef8;
     transition: all .3s;
     outline: none
@@ -682,7 +688,7 @@ header .mobile-nav .slide-panel li:last-child a{
 }
 .login-register-pg .mid-sec form .s-input .password a{
     position: absolute;
-    right: 90px;
+    right: 70px;
     top: 15px;
     display: inline;
     width: unset;
@@ -745,8 +751,8 @@ header .mobile-nav .slide-panel li:last-child a{
     display: block;
     width: 10px;
     height: 5px;
-    border-bottom: 2px solid #4291e0;
-    border-left: 2px solid #4291e0;
+    border-bottom: 2px solid #ed4d12;
+    border-left: 2px solid #ed4d12;
     -webkit-transform: rotate(-45deg) scale(0);
     transform: rotate(-45deg) scale(0);
     transition: transform ease 0.25s;
@@ -790,7 +796,7 @@ header .mobile-nav .slide-panel li:last-child a{
 }
 .login-register-pg .bottom-sec p a{
     display: inline-block;
-    color: #4291e0;
+    color: #ed4d12;
     font-weight: 600;
     width: unset
 }
@@ -801,7 +807,7 @@ header .mobile-nav .slide-panel li:last-child a{
     text-decoration: underline
 }
 .login-register-pg .bottom-sec .proceed{
-        background: #76c258;
+        background: #ed4d12;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -812,13 +818,18 @@ header .mobile-nav .slide-panel li:last-child a{
     font-size: 20px;
     border: 1px solid;
     transition: all .3s;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: p-med
 }
 .login-register-pg .bottom-sec .proceed:hover{
-    border: 1px solid #76c258;
+    border: 1px solid #ed4d12;
     background: #fff;
-    color: #76c258;
+    color: #ed4d12;
     transition: all .3s
+}
+.login-register-pg .form-container{
+    position: relative;
+    padding-bottom: 100px
 }
 .login-register-pg .pic{
     height: 100%;
@@ -860,15 +871,181 @@ header .mobile-nav .slide-panel li:last-child a{
     font-size: 12px
 }
 
-.login-register-pg .video-play span i{
-    color: #000
-}
+
 
 .login-register-pg .s-input{
-    margin-bottom: 20px
+    margin-bottom: 30px
+}
+.login-register-pg .s-input span.error-msg{
+    display: none
+}
+.login-register-pg .s-input.error span.error-msg{
+    display: block;
+    position: absolute;
 }
 .login-register-pg header{
     padding: 20px 0
 }
+.login-register-pg .mid-sec form .s-input.error span{
+    display: block;
+    color: #dc4343;
+    font-size: 12px;
+    position: absolute;
+    bottom: 6px
+}
+.login-register-pg .mid-sec form .s-input.error input:not([type="checkbox"]) {
+    border-color: #dc4343;
+
+}
 
 
+.login-register-pg .modal-body form  .verify-pic {
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+.login-register-pg .modal-body form  .verify-pic  img{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.login-register-pg .verify-container .modal-body form  h3{
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-family: p-sb;
+}
+.login-register-pg .verify-container .modal-body form  p{
+    font-family: p-reg;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 0 30px;
+    font-size: 17px;
+}
+.login-register-pg .verify-container .modal-body form  .digits{
+    text-align: center;
+    margin-bottom: 25px
+}
+.login-register-pg .verify-container .modal-body form  .digits input{
+        display: inline-block;
+    width: 35px;
+    height: 55px;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    font-family: p-med;
+    color: #1a242e;
+    font-size: 34px;
+}
+.login-register-pg .verify-container .modal-body form  .digits input:not(:last-of-type){
+    margin-right: 10px
+}
+.login-register-pg .verify-container .modal-body form  .digits input:focus{
+    outline: none
+}
+.login-register-pg .verify-container .modal-body form  .bottom h5{
+    color: #34495e;
+    font-size: 15px;
+    font-family: p-reg;
+    line-height: 22px;
+    padding-right: 10px;
+
+}
+.login-register-pg .verify-container .modal-body form  .bottom h5 a{
+    display: inline-block;
+    color: #34495e;
+    width: unset;
+    color: #ed4d12;
+    font-family: p-med
+}
+.login-register-pg .verify-container .modal-body form  .bottom h5 a:hover{
+    text-decoration: underline
+}
+.login-register-pg .verify-container .modal  .modal-dialog{
+    max-width: 700px;
+}
+.login-register-pg .verify-container .modal .modal-header{
+    border-bottom: 0;
+    padding: 10px 0 0 0;
+}
+.login-register-pg .verify-container .modal .modal-header button:focus{
+    outline: none;
+}
+
+.login-register-pg .verify-container .modal .modal-header button{
+    outline: none
+}
+.login-register-pg .verify-container .modal  .modal-dialog .modal-content{
+    border-radius: 20px;
+    padding: 10px 20px
+}
+
+/*End Login & Register Pages*/
+
+/*Start Congrats Page*/
+.congrats-pg section.congrats{
+    margin: 50px 0
+}
+.congrats-pg .congrats-container h1{
+    color: #1a242e;
+    font-family: p-bold;
+}
+.congrats-pg .congrats-container h1 span{
+    color: #ed4d12
+}
+.congrats-pg .congrats-container .congrats-pic {
+    width: 400px;
+    margin: 40px auto 40px auto;
+    overflow: hidden;
+    position: relative
+
+}
+.congrats-pg .congrats-container .congrats-pic img{
+    max-width: 100%;
+    max-height: 100%
+}
+.congrats-pg .congrats-container p{
+    color: #34495e;
+    font-family: p-reg;
+    font-size: 18px;
+    padding: 0 280px;
+    margin-bottom: 30px
+}
+.congrats-pg .congrats-container a{
+    color: #ed4d12;
+    text-transform: uppercase;
+    font-family: p-sb;
+    display: inline-block;
+    width: unset
+}
+.congrats-pg .congrats-container a:hover{
+    text-decoration: underline
+}
+.congrats-pg .congrats-container .gify{
+   position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1) translate(-50%);
+}
+/*End Congrats Page*/
+/*Start Footer Style*/
+footer{
+
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #e4e4e4;
+}
+footer h5{
+    color: #95a5a6;
+    font-family: p-reg;
+    font-size: 12px
+}
+/*End Footer Style*/
