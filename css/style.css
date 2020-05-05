@@ -825,7 +825,8 @@ header .mobile-nav .slide-panel li:last-child a{
     border: 1px solid;
     transition: all .3s;
     text-transform: uppercase;
-    font-family: p-med
+    font-family: p-med;
+    cursor: pointer
 }
 .login-register-pg .bottom-sec .proceed:hover{
     border: 1px solid #ed4d12;
