@@ -32,6 +32,7 @@
     border-radius: 30px;
     margin: 40px auto 40px auto;
     }
+/*
     .mobile-bg-video{
         display: block;
         position: fixed;
@@ -48,6 +49,7 @@
         padding-left: 0 !important;
         object-fit: fill
     }
+*/
     .login-register-pg .form-container{
         width: 100%;
         background: #ffffffc9;
@@ -102,9 +104,7 @@
         width: 100%;
         margin-top: 20px
     }
-    .login-register-pg .top-sec:after{
-        background: #fff
-    }
+
     .login-register-pg .top-sec .sign-options a,
     .login-register-pg .bottom-sec .proceed{
         border: none !important
@@ -164,7 +164,7 @@
         height: 400px;
     }
     .login-register-pg .top-sec h1{
-        font-size: 28px
+        font-size: 36px
     }
     .login-register-pg .modal-body form .verify-pic{
         width: 100%;
@@ -187,7 +187,7 @@
         font-size: 12px
     }
     .login-register-pg main{
-        height: 100%
+/*        height: 100%*/
     }
     .congrats-pg .congrats-container h1{
         font-size: 24px;

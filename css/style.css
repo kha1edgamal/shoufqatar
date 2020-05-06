@@ -112,8 +112,10 @@ main {
 
 ::placeholder {
     text-align: left;
-    color: #95a5a6;
-    font-weight: 100
+    color: #95A5A6;
+    font-family: p-reg;
+    font-size: 13px;
+
     /*mozilla*/
 
 }
@@ -199,9 +201,7 @@ input[type=number] {
 .m-auto-0{
     margin: auto 0
 }
-.mobile-bg-video{
-    display: none;
-}
+
 @font-face {
   font-family: helvitica;
   src: url(../fonts/HelveticaNeueMed.ttf);
@@ -623,9 +623,10 @@ header .mobile-nav .slide-panel li:last-child a{
     margin: auto 0;
     color: #fff;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 17px;
     transition: all .3s;
     border: 1px solid;
+    font-family: p-med;
 }
 .login-register-pg .top-sec .sign-options a:hover{
     border: 1px solid #518ef8;
@@ -712,7 +713,7 @@ header .mobile-nav .slide-panel li:last-child a{
 }
 .login-register-pg  form .s-input h5 a{
     display: inline;
-    color: #4291e0
+    color: #ed4d12
 
 }
 .login-register-pg  form .s-input h5 a:hover{
@@ -797,7 +798,8 @@ header .mobile-nav .slide-panel li:last-child a{
 
 .login-register-pg .bottom-sec p{
     color: #34495e;
-    font-size: 14px
+    font-size: 14px;
+    padding-left: 17px
 
 }
 .login-register-pg .bottom-sec p a{
@@ -821,7 +823,7 @@ header .mobile-nav .slide-panel li:last-child a{
     margin: auto 0;
     color: #fff;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid;
     transition: all .3s;
     text-transform: uppercase;
@@ -857,8 +859,11 @@ header .mobile-nav .slide-panel li:last-child a{
     bottom: 80px;
     width: 300px;
     color: #fff;
-    left: 20px;
-    z-index: 1
+    left: 80px;
+    z-index: 1;
+    font-family: p-bold;
+    font-size: 37px;
+    line-height: 56px;
 }
 .login-register-pg video{
     height: 100%;
@@ -884,6 +889,10 @@ header .mobile-nav .slide-panel li:last-child a{
     margin-bottom: 10px;
     position: relative;
     padding-bottom: 30px;
+}
+.login-pg .s-input { /*in login page only!*/
+    margin-bottom: 30px;
+    padding-bottom: 0
 }
 .login-register-pg .s-input span.guide{
     color: #95a5a6;
@@ -914,7 +923,12 @@ header .mobile-nav .slide-panel li:last-child a{
     border-color: #dc4343;
 
 }
-
+.login-register-pg form .s-input label{
+        margin-bottom: 5px;
+    color: #34495E;
+    font-family: p-med;
+    font-size: 15px;
+}
 
 .login-register-pg .modal-body form  .verify-pic {
     width: 460px;
