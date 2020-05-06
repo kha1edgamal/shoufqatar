@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -48,548 +48,483 @@
     </div>
     <!--End Preloader Section-->
     <div class="page-container filter-pg">
-         <!--Start Header Section-->
-    <header>
-        <div class="custom-container">
-           <!--Screen Nav-->
-            <div class="screen-nav d-flex-sb">
-                <div class="logo">
-                    <img src="imgs/logo.png" alt="">
-                </div>
-                <div class="list-nav m-auto-0">
-                    <ul>
-                        <li>
-                            <a href="#">Explore Experiences</a>
-                        </li>
-                        <li>
-                            <a href="#">Host Your Experience</a>
-                        </li>
-                        <li>
-                            <a href="login.html">login</a>
-                        </li>
-                        <li>
-                            <a href="register.html">create new account</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--/Screen Nav-->
-
-            <!--Mobile Nav-->
-            <div class="mobile-nav ">
-               <div class="d-flex-sb">
+        <!--Start Header Section-->
+        <header>
+            <div class="custom-container">
+                <!--Screen Nav-->
+                <div class="screen-nav d-flex-sb">
                     <div class="logo">
                         <img src="imgs/logo.png" alt="">
                     </div>
-                   <div class="toggle-button slide-btn">
-                       <div class="wrapper">
-                           <div class="menu-bar menu-bar-top"></div>
-                           <div class="menu-bar menu-bar-middle"></div>
-                           <div class="menu-bar menu-bar-bottom"></div>
-                       </div>
-                   </div>
-               </div>
-               <div class="slide-panel " style="display: none">
-                   <ul>
-                       <li><a href="#">Explore Experience</a></li>
-                       <li><a href="#">Host Your Experience</a></li>
-                       <li><a href="login.html">Login</a></li>
-                       <li><a href="register.html">Create New Account</a></li>
-                   </ul>
-               </div>
-
-            </div>
-            <!--/Mobile Nav-->
-        </div>
-    </header>
-    <!--End Header Section-->
-
-    <!--Start Main Section-->
-    <main>
-        <div class="custom-container">
-
-            <!--Topic Description -->
-            <div class="top-desc">
-                <h1>Desert Experiences</h1>
-                <p>Open Shouf and start exploring and booking unique experiences to do in Qatar across many categories! </p>
-            </div>
-            <!--/Topic Description -->
-
-            <!--Start Filter Section-->
-            <section class="filter">
-                <!-- Search Box-->
-                <div class="search-box">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
-                                <div class="s-input">
-                                    <label for="location">location</label>
-                                    <input type="text" id='location' placeholder="Enter address, landmark in Qatar">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
-                                <div class="s-input">
-                                   <!--Note here-->
-                                    <label for="date">EXPERIENCE DATE</label>
-                                    <div class="input-group date" data-provide="datepicker">
-                                        <input type="text" placeholder="When you want to do an activity">
-                                        <div class="input-group-addon">
-                                            <i class="fas fa-calendar-week"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
-                                <div class="s-input">
-                                    <label for="category">category</label>
-                                    <select class="category-select" name="state" id='category'>
-                                        <option value="d">Desert</option>
-                                        <option value="s">Sports</option>
-                                        <option value="f">Fun</option>
-                                        <option value="p">Play</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-3 col-sm-6">
-                                <div class="s-input text-right">
-                                    <button>Filter</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- /Search Box-->
-
-                <!-- Filter Content-->
-                <div class="filter-content">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-1.jpg"  alt="">
-                                      <video class="hoverVideo" height="500px" width="100%"   muted loop data-toggle="modal" data-target="#v-1">
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="v-1" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop >
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                           <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-2.jpg"  alt="">
-                                      <video class="hoverVideo" height="500px" width="100%" data-toggle="modal" data-target="#v-2" muted loop>
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="v-2" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop >
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-3.jpg"  alt="">
-                                      <video data-toggle="modal" data-target="#v-3" class="hoverVideo" height="500px" width="100%"  muted loop>
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="v-3" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop>
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-4.jpg"  alt="">
-                                      <video data-toggle="modal" data-target="#v-4" class="hoverVideo" height="500px" width="100%"  muted loop>
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                 <!-- Modal -->
-                                <div class="modal fade" id="v-4" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop >
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-1.jpg"  alt="">
-                                      <video class="hoverVideo" height="500px" width="100%"   muted loop >
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="v-1" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop >
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                           <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-2.jpg"  alt="">
-                                      <video class="hoverVideo" height="500px" width="100%" data-toggle="modal" data-target="#v-2" muted loop>
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="v-2" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop>
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-3.jpg"  alt="">
-                                      <video data-toggle="modal" data-target="#v-3" class="hoverVideo" height="500px" width="100%"  muted loop>
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="v-3" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop >
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single">
-                                <div class="pic">
-                                      <img class="poster" src="imgs/exp-4.jpg"  alt="">
-                                      <video data-toggle="modal" data-target="#v-4" class="hoverVideo" height="500px" width="100%"  muted loop>
-                                          <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                      </video>
-                                    <div class="video-play">
-                                        <span><i class="fas fa-play"></i></span>
-                                        <span>
-                                            <h5>Falcon Hunting</h5>
-                                            <h6>0:30</h6>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <h5>Desert</h5>
-                                    <h4>Falcon Hunting in Doha Desert</h4>
-                                    <h5>From QAR 80 / Per Person</h5>
-                                </div>
-                                <div class="rating">
-                                    <div class="stars">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div class="rating-num">
-                                        <span>5.0 rating</span>
-                                    </div>
-                                </div>
-                                 <!-- Modal -->
-                                <div class="modal fade" id="v-4" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                           <div class="modal-header">
-                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true">&times;</span>
-                                               </button>
-                                           </div>
-                                            <div class="modal-body">
-                                                <video controls  height="500px" width="100%"   muted loop >
-                                                     <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
-                                              </video>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="list-nav m-auto-0">
+                        <ul>
+                            <li>
+                                <a href="#">Explore Experiences</a>
+                            </li>
+                            <li>
+                                <a href="#">Host Your Experience</a>
+                            </li>
+                            <li>
+                                <a href="login.html">login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">create new account</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!--/row-->
-
-                    <!--/Filter Content-->
                 </div>
-            </section>
-        </div>
+                <!--/Screen Nav-->
 
-    </main>
-    <!--End Main Section-->
+                <!--Mobile Nav-->
+                <div class="mobile-nav ">
+                    <div class="d-flex-sb">
+                        <div class="logo">
+                            <img src="imgs/logo.png" alt="">
+                        </div>
+                        <div class="toggle-button slide-btn">
+                            <div class="wrapper">
+                                <div class="menu-bar menu-bar-top"></div>
+                                <div class="menu-bar menu-bar-middle"></div>
+                                <div class="menu-bar menu-bar-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-panel " style="display: none">
+                        <ul>
+                            <li><a href="#">Explore Experience</a></li>
+                            <li><a href="#">Host Your Experience</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Create New Account</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--/Mobile Nav-->
+            </div>
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Main Section-->
+        <main>
+            <div class="custom-container">
+
+                <!--Topic Description -->
+                <div class="top-desc">
+                    <h1>Desert Experiences</h1>
+                    <p>Open Shouf and start exploring and booking unique experiences to do in Qatar across many categories! </p>
+                </div>
+                <!--/Topic Description -->
+
+                <!--Start Filter Section-->
+                <section class="filter">
+                    <!-- Search Box-->
+                    <div class="search-box">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-3 col-sm-6">
+                                    <div class="s-input">
+                                        <label for="location">location</label>
+                                        <select class="location-select" name="state" id='category'>
+                                            <option value=""></option>
+                                            <option value="a001">Doha</option>
+                                            <option value="a002">Abu az Zuluf</option>
+                                            <option value="a003">Abu Thaylah</option>
+                                            <option value="a004">Al Ghanim</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-3 col-sm-6">
+                                    <div class="s-input">
+                                        <!--Note here-->
+                                        <label for="date">EXPERIENCE DATE</label>
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input type="text" placeholder="When you want to do an activity">
+                                            <div class="input-group-addon">
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-3 col-sm-6">
+                                    <div class="s-input">
+                                        <label for="category">category</label>
+                                        <select class="category-select" name="state" id='category'>
+                                            <option value=""></option>
+                                            <option value="d">Desert</option>
+                                            <option value="s">Sports</option>
+                                            <option value="f">Fun</option>
+                                            <option value="p">Play</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-3 col-sm-6">
+                                    <div class="s-input text-right">
+                                        <button>Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /Search Box-->
+
+                    <!-- Filter Content-->
+                    <div class="filter-content">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="single video-sec">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-1.jpg" alt="">
+                                        <video  class="clickedVideo" height="500px" width="100%" muted  loop controls>
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play ">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-2.jpg" alt="">
+                                        <video  onclick="this.get(0).play();" class="clickedVideo" height="500px" width="100%" muted  loop controls>
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-3.jpg" alt="">
+                                        <video  onclick="this.get(0).play();" class="clickedVideo" height="500px" width="100%" muted  loop controls>
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-4.jpg" alt="">
+                                      <video  onclick="this.get(0).play();" class="clickedVideo" height="500px" width="100%" muted  loop controls>
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-1.jpg" alt="">
+                                        <video class="hoverVideo" height="500px" width="100%" muted loop data-toggle="modal" data-target="#v-5">
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="v-5" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls height="500px" width="100%" muted loop>
+                                                        <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                                    </video>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-2.jpg" alt="">
+                                        <video class="hoverVideo" height="500px" width="100%" data-toggle="modal" data-target="#v-6" muted loop>
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="v-6" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls height="500px" width="100%" muted loop>
+                                                        <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                                    </video>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-3.jpg" alt="">
+                                        <video data-toggle="modal" data-target="#v-7" class="hoverVideo" height="500px" width="100%" muted loop>
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="v-7" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls height="500px" width="100%" muted loop>
+                                                        <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                                    </video>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img class="poster" src="imgs/exp-4.jpg" alt="">
+                                        <video data-toggle="modal" data-target="#v-4" class="hoverVideo" height="500px" width="100%" muted loop data-toggle="modal" data-target="#v-8">
+                                            <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                        </video>
+                                        <div class="video-play">
+                                            <span><i class="fas fa-play"></i></span>
+                                            <span>
+                                                <h5>Falcon Hunting</h5>
+                                                <h6>0:30</h6>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Desert</h5>
+                                        <h4>Falcon Hunting in Doha Desert</h4>
+                                        <h5>From QAR 80 / Per Person</h5>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <div class="rating-num">
+                                            <span>5.0 rating</span>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="v-8" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls height="500px" width="100%" muted loop>
+                                                        <source src="imgs/y2mate.com%20-%20Art%20of%20Falconry%20in%20Dubai_ezsMrlg8QrU_240p.mp4">
+                                                    </video>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/row-->
+
+                        <!--/Filter Content-->
+                    </div>
+                </section>
+            </div>
+
+        </main>
+        <!--End Main Section-->
     </div>
 
 
@@ -612,11 +547,12 @@
     <!--Main Script-->
     <script src="js/script.js"></script>
 
-<script>
-    $('.datepicker').datepicker({
-    format: 'mm/dd/yyyy',
-    startDate: '-3d'
-});
+    <script>
+        $('.datepicker').datepicker({
+            format: 'mm/dd/yyyy',
+            startDate: '-3d'
+        });
+
     </script>
 
 

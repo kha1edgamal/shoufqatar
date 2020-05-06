@@ -115,6 +115,9 @@
     .congrats-pg .congrats-container p{
         padding: 0
     }
+    .filter-pg main .select2-container--default .select2-selection--single .select2-selection__rendered{
+        overflow: hidden
+    }
 }
 @media(max-width:768px){
     .filter-pg main .top-desc p{

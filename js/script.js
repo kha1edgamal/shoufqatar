@@ -1,17 +1,69 @@
 $(document).ready(function () {
 new WOW().init();
-    //Start Owl Carousel
+
+
+    //Start Owl
+    $('.hero-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    stagePadding: 50,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+    //End Owl
+
+
+    //Start Select Init
   $('.category-select').select2({
+      placeholder:"Select certain type of activities",
       width: "50%",
   });
-    //End Owl Carousel
+      $('.location-select').select2({
+      placeholder:"Enter address, landmark in Qatar",
+      width: "50%",
+  });
+    //End Select Init
+
+    //Start Video Play On Click
+    const clickedVideo = document.querySelectorAll(".clickedVideo");
+    clickedVideo.forEach((cVideo) => {
+    cVideo.addEventListener("click", function () {
+
+
+    $(this).siblings('img').css({"display": "none"});
+      $(this).siblings('h1').css({"display": "none"});
+      $(this).css({"opacity": "1"});
+        $(this).siblings('.video-play').css({"display": "none"});
+      $(this).siblings('.video-play').children('span').children('i').removeClass().addClass('fas fa-pause');
+  });
+
+});
+    $('.clickedVideo').click(function(){
+        $(this).play();
+        this.paused ? this.play() : this.pause();
+    })
+
+
+
+
 
     //Start Video Play On Hover
     const videos = document.querySelectorAll(".hoverVideo");
-videos.forEach((video) => {
-  video.addEventListener("mouseover", function () {
+    videos.forEach((video) => {
+    video.addEventListener("mouseover", function () {
     this.play();
-    $(this).siblings('img').fadeOut();
+
+      $(this).siblings('img').fadeOut();
       $(this).siblings('h1').fadeOut();
       $(this).css({"opacity": "1"});
       $(this).siblings('.video-play').children('span').children('i').removeClass().addClass('fas fa-pause');
