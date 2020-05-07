@@ -14,7 +14,6 @@ html{
 }
 
 body {
-    overflow-x: hidden;
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -1255,5 +1254,248 @@ footer.cpy-footer h5{
 .single.v-single .pic{
     position: relative
 }
+.home-pg.page-container{
+    position: relative
+}
+.home-pg .overlay-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0
+}
+.home-pg .overlay-header .list-nav ul li a{
+    color: #fff
+}
+.home-pg .overlay-header .list-nav ul li:last-child a{
+    border: none;
+    background: #ffffff2b;
+    transition: all .3s
+}
+.home-pg .overlay-header .list-nav ul li:last-child:hover a {
+    transition: all .3s;
+    background: #fff;
+
+}
+.home-pg .overlay-header:after{
+    display: none
+}
+.home-pg .hero{
+    background-image: url(../imgs/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 170px
+}
+.home-pg .hero img.poster,
+.home-pg .hero video{
+    height: 442px;
+}
+.home-pg .hero .right-sec .item{
+    cursor: pointer
+}
+.home-pg .hero .left-sec{
+    padding-left: 50px;
+}
+.home-pg .hero .left-sec h1{
+    font-family: p-bold;
+    color: #fff;
+    font-size: 60px;
+    padding-right: 130px;
+    line-height: 90px;
+}
+.home-pg .hero .left-sec p{
+    font-size: 22px;
+    color: #fff;
+    margin: 20px 0;
+    line-height: 33px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    padding-right: 140px
+}
+.home-pg .hero .left-sec p span{
+    font-weight: 900;
+    font-family: dm-bold;
+    font-size: 25px;
+    vertical-align: baseline;
+}
+.home-pg .hero .left-sec a.explore{
+    display: inline-block;
+    width: 266px;
+    height: 67px;
+    line-height: 67px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    color: #ED4D12;
+    font-family: p-med;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    transition: all .3s
+}
+.home-pg .hero .left-sec a.explore:hover{
+    border-color: #ED4D12;
+    background: transparent;
+    color: #fff
+}
+.home-pg .what-to-do{
+    margin: 60px 0 40px 0;
+}
+.home-pg .what-to-do h1{
+    font-size: 37px;
+    font-family: p-bold;
+    color: #ED4D12;
+    margin-bottom: 30px;
+
+}
+.home-pg .what-to-do p{
+    color: #000000;
+    font-size: 22px;
+    font-family: p-reg;
+    line-height: 38px;
+    width: 665px;
+    margin: auto;
+}
+.home-pg .category-row > h1 {
+    font-family: p-sb;
+    font-size: 32px;
+    color: #1A242E;
+    margin-bottom: 30px
+}
+.home-pg .app {
+        background-color: #ED4D12;
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 50px
+}
+.home-pg .app .text-sec{
+    padding-left: 80px;
+}
+.home-pg .app .text-sec h1{
+    font-size: 37px;
+    font-family: p-bold;
+    line-height: 60px;
+}
+.home-pg .app .text-sec h1 span{
+    display: block;
+}
+.home-pg .app .text-sec p{
+    font-family: p-reg;
+    font-size: 17px;
+    line-height: 25.5px;
+    margin: 20px 0;
+}
+.home-pg .app .text-sec ul li{
+    display: inline-block;
+}
+.home-pg .app .text-sec ul li:not(:last-child){
+    margin-right: 30px
+}
+.home-pg .apply-host{
+    background: #1A242E;
+    border-radius: 12px;
+    color: #fff;
+    margin-bottom: 50px
+}
+.home-pg .apply-host .right-sec{
+    padding: 30px 0
+}
+.home-pg .apply-host .right-sec p{
+    font-family: p-reg;
+    font-size: 17px;
+    width: 406px;
+    margin: auto ;
+
+}
+.home-pg .apply-host .right-sec a {
+    width: 294px;
+    margin: 20px auto auto 130px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    background: #2DC972;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: p-med;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid  #2DC972;
+    transition: all .3s
+}
+.home-pg .apply-host .right-sec a:hover{
+    border-color: #fff;
+    color: #fff;
+    transition: all .3s;
+    background: transparent
+}
+.home-pg .apply-host  .text-sec{
+    padding-left: 80px;
+}
+.home-pg .apply-host  .text-sec h1{
+    font-size: 32px;
+    font-family: p-bold;
+    line-height: 52px;
+}
+.home-pg .apply-host  .text-sec h1 span{
+    color: #2DC972;
+    display: block;
+}
+
 /*End homepage Style*/
+
+/*Start Main Footer*/
+footer.main-footer{
+    padding: 60px;
+    position: relative;
+    border-top: 1px solid #ECF0F1;
+}
+footer.main-footer .logo-sec{
+    text-align: center;
+}
+
+footer.main-footer .logo-sec h6{
+    font-family: p-reg;
+    font-size: 10px;
+    color: #95A5A6;
+    margin-top: 15px
+}
+footer.main-footer .box ul li{
+    font-family: p-reg;
+    font-size: 13px;
+}
+footer.main-footer .box ul li a{
+    display: inline;
+    width: unset;
+    color: #34495E;
+    font-family: p-reg;
+
+}
+footer.main-footer .box ul li a:hover{
+    text-decoration: underline
+}
+footer.main-footer .box ul li h1{
+    font-size: 15px;
+    color: #ED4D12;
+    font-family: p-med;
+    font-weight: bold
+}
+footer.main-footer .box ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+footer.main-footer .box{
+        width: 150px;
+    margin: 0 auto;
+}
+footer.main-footer .social span a i {
+    font-size: 20px;
+    color: #ED4D12;
+}
+footer.main-footer .social span:not(:last-of-type) a i{
+    margin-right:10px
+}
+/*End Main Footer*/
 
