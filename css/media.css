@@ -118,7 +118,50 @@
     .filter-pg main .select2-container--default .select2-selection--single .select2-selection__rendered{
         overflow: hidden
     }
-}
+
+    .home-pg .hero img.poster, .home-pg .hero video{
+        height: 300px
+    }
+    .home-pg .what-to-do{
+        margin-top: 200px
+    }
+    .home-pg .hero .right-sec{
+        margin-top: 30px;
+        margin-left: 50px
+    }
+    .home-pg .app .text-sec{
+        padding: 20px 50px;
+    }
+    .home-pg .app .img-sec{
+text-align: center}
+    .home-pg .apply-host .right-sec a{
+        margin: 0;
+    }
+    .home-pg .apply-host .right-sec p{
+        width: unset;
+        margin-bottom: 10px
+    }
+    .home-pg .apply-host .text-sec,
+    .home-pg .apply-host .right-sec{
+padding: 0}
+    .home-pg .apply-host{
+        padding: 40px
+    }
+    .home-pg .apply-host .text-sec h1{
+        margin-bottom: 20px
+    }
+    footer.main-footer .box{
+        width: 100%;
+        margin-bottom: 30px
+    }
+    footer.main-footer .logo-sec{
+        text-align: left;
+        margin-bottom: 30px
+    }
+    .home-pg .hero{
+        padding-top: 130px
+    }
+} /*/991*/
 @media(max-width:768px){
     .filter-pg main .top-desc p{
         width: 100%
@@ -132,7 +175,16 @@
     .login-register-pg .modal-container .modal-body form p{
         padding: 0
     }
-}
+    .home-pg .hero .left-sec{
+        padding-left: 20px;
+    }
+    .home-pg .hero .right-sec{
+        margin-left: 20px;
+    }
+    .home-pg .what-to-do p{
+        width: 100%
+    }
+} /*/768*/
 @media(max-width:520px){
     .login-register-pg main{
         width: 100%
@@ -143,6 +195,38 @@
     .login-register-pg .forget-modal .modal-body h1{
         padding: 0;
         font-size: 25px
+    }
+    .home-pg .hero .left-sec h1{
+        padding-right: 0;
+        font-size: 35px;
+        line-height: inherit;
+        padding-right: 20px;
+    }
+    .home-pg .hero .left-sec p{
+        margin: 10px 0;
+        padding-right: 20px;
+        font-size: 18px;
+
+    }
+    .home-pg .hero .left-sec a.explore{
+        height: 50px;
+        line-height: 50px
+    }
+    .home-pg .hero{
+        height: 100%;
+    }
+    .home-pg .hero .right-sec{
+        margin-top: 60px;
+    }
+    .home-pg .what-to-do{
+        margin: 60px 0 40px 0
+    }
+    footer.main-footer{
+        padding: 40px 0
+    }
+    .home-pg .app .img-sec img{
+        width: 100%;
+        height: 100%
     }
 }
 @media(max-width:425px){
@@ -202,7 +286,20 @@
         font-size: 25px;
         margin-bottom: 20px
     }
-
+    .home-pg .app .text-sec ul li img{
+        width: 90px;
+    }
+    .home-pg .app .text-sec h1,
+    .home-pg .apply-host .text-sec h1{
+        font-size: 25px;
+        line-height: 40px
+    }
+    .home-pg .apply-host .right-sec a{
+        width: 100%
+    }
+    .home-pg .apply-host .right-sec p{
+        font-size: 15px
+    }
 }
 @media(max-width:360px){
 

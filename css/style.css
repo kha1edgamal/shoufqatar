@@ -306,6 +306,7 @@ header .mobile-nav .toggle-button {
   padding: 4px;
   transition: .25s;
   z-index: 15;
+    margin: auto 0
 }
 
 header .mobile-nav .toggle-button:hover {
@@ -1264,6 +1265,11 @@ footer.cpy-footer h5{
     width: 100%;
     padding: 10px 0
 }
+header.overlay-header .mobile-nav .slide-panel{
+    position: relative;
+    background: #fff;
+    z-index: 9
+}
 .home-pg .overlay-header .list-nav ul li a{
     color: #fff
 }
@@ -1286,7 +1292,7 @@ footer.cpy-footer h5{
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 721px;
     padding-top: 170px
 }
 .home-pg .hero img.poster,

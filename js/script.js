@@ -9,17 +9,23 @@ new WOW().init();
     nav:false,
     dots: false,
     stagePadding: 50,
-    autoplay:true,
-    autoplayTimeout:1500,
-    autoplayHoverPause:true,
+    autoplay:false,
+//    autoplayTimeout:1500,
+//    autoplayHoverPause:true,
+    responsiveClass:true,
     responsive:{
         0:{
-            items:1
+            items:1,
         },
         600:{
-            items:2
+            items:2,
         },
+
         1000:{
+            items:2,
+
+        },
+        1200:{
             items:2
         }
     }
