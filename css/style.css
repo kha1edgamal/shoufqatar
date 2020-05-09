@@ -306,7 +306,8 @@ header .mobile-nav .toggle-button {
   padding: 4px;
   transition: .25s;
   z-index: 15;
-    margin: auto 0
+    margin: auto 0;
+    overflow: hidden
 }
 
 header .mobile-nav .toggle-button:hover {
@@ -368,6 +369,63 @@ header .mobile-nav .slide-panel li:last-child{
 }
 header .mobile-nav .slide-panel li:last-child a{
     color: #fff
+}
+
+header.logged .logged-name {
+    display: inline-block !important;
+    width: 210px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    position: relative
+}
+header.logged .logged-name .pic,
+header.logged .logged-name .name{
+    display: inline-block
+}
+header.logged .logged-name .pic img{
+   width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+header.logged .logged-name .pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0,-50%);
+
+}
+header.logged .logged-name .name{
+    padding-left: 30px;
+    font-family: p-reg;
+    font-size: 17px;
+    color: #1A242E
+}
+header.logged .logged-name{
+    background: #ECF0F1;
+    border-radius: 25px;
+}
+header .login,
+header .register,
+header .logged-name{
+    display: none;
+}
+{
+    display: block
+}
+
+header.logged .login,
+header.logged .register,
+header .logged-name{
+    display: none !important
 }
 /*End header style*/
 

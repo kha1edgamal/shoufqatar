@@ -161,6 +161,9 @@ padding: 0}
     .home-pg .hero{
         padding-top: 130px
     }
+    header.logged .logged-name{
+        margin-top: 15px
+    }
 } /*/991*/
 @media(max-width:768px){
     .filter-pg main .top-desc p{
