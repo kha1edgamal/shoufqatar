@@ -164,6 +164,25 @@ padding: 0}
     header.logged .logged-name{
         margin-top: 15px
     }
+    .profile-pg .top-sec, .profile-pg .middle-sec, .profile-pg .bottom-sec{
+        padding-right: 0
+    }
+    .profile-pg .earn-sec .earn-container .pic{
+        width: 400px;
+        margin: 40px auto
+    }
+    .profile-pg .profile-sec .earn-sec{
+        margin-top: 40px
+    }
+    .profile-pg .set-country .select2-container{
+        margin-bottom: 15px
+    }
+    .profile-pg .set-country .location a.allow{
+        margin-bottom: 15px
+    }
+    .profile-pg .profile-sec .earn-sec .earn-footer img{
+        width: 100%
+    }
 } /*/991*/
 @media(max-width:768px){
     .filter-pg main .top-desc p{
@@ -172,9 +191,11 @@ padding: 0}
         .custom-container{
         padding: 0 20px;
     }
-    .login-register-pg .modal-container .modal .modal-dialog{
+/*
+    .modal-container .modal .modal-dialog{
         max-width: 540px
     }
+*/
     .login-register-pg .modal-container .modal-body form p{
         padding: 0
     }
@@ -187,7 +208,42 @@ padding: 0}
     .home-pg .what-to-do p{
         width: 100%
     }
+    .profile-pg .modal-body .paragraph,
+    .profile-pg .set-birth form{
+        padding: 0
+    }
+    .profile-pg .set-birth .no-gutters{
+        margin-left: 0
+    }
+        .profile-pg .middle-sec .data-view .infos img {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+    .profile-pg .middle-sec .data-view .infos .text span:nth-child(1){
+        font-size: 8px
+    }
+    .profile-pg .middle-sec .data-view .infos .text span:nth-child(2){
+        font-size: 10px
+    }
+    .s-padding{
+        padding: 30px 0
+    }
 } /*/768*/
+@media(max-width:575px){
+    .profile-pg .middle-sec .data-view .infos .text span:nth-child(1){
+        font-size: 11px
+    }
+    .profile-pg .middle-sec .data-view .infos .text span:nth-child(2){
+font-size: 13px;
+    }
+    .profile-pg .middle-sec div.single-row{
+        margin-bottom: 15px
+    }
+    .profile-pg .middle-sec .data-container{
+        padding: 10px
+    }
+}/*/575*/
 @media(max-width:520px){
     .login-register-pg main{
         width: 100%
@@ -231,9 +287,68 @@ padding: 0}
         width: 100%;
         height: 100%
     }
-}
+    header.logged .logged-name .name{
+        display: none
+    }
+    header.logged .logged-name{
+        width: 50px
+    }
+    header.logged .logged-name .pic{
+        left: 50%;
+        transform: translate(-50%,-50%)
+    }
+    .profile-pg .bottom-sec .single-row img.ico{
+        width: 20px;
+        height: 20px;
+    }
+    .profile-pg .bottom-sec .single-row h5{
+        font-size: 12px;
+    }
+    .profile-pg .earn-sec .earn-container .pic{
+width: 100%}
+
+    .profile-pg .bottom-sec div.single-row{
+        padding: 10px
+    }
+    .profile-pg .bottom-sec .single-row h5 span{
+        font-size: 8px;
+        width: 200px;
+    line-height: 13px;
+    }
+    .profile-pg .bottom-sec div.single-row:not(:last-of-type){
+        margin-bottom: 15px
+    }
+    .profile-pg .modal-body .head-title{
+        font-size: 29px
+    }
+    .profile-pg .modal-body .paragraph{
+        font-size: 13px
+    }
+    .profile-pg .saved-cards > h4{
+        margin-bottom: 20px
+    }
+    .profile-pg .saved-cards ul li:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+}/*/520*/
 @media(max-width:425px){
-    .login-register-pg .modal-open .modal{
+    .profile-pg .set-pic form label[for='openCamera'],
+    .profile-pg .set-pic form label[for='upload']{
+        font-size: 9px;
+        height: 40px;
+        line-height: 40px;
+    }
+        .profile-pg .modal-body .head-title{
+        font-size: 20px
+    }
+    .profile-pg .bottom-sec .single-row img.ico{
+        display: none
+    }
+    .home-pg .what-to-do {
+/*    margin-top: 200px;*/
+}
+     .modal-open .modal{
         padding-left: 0 !important
     }
     .filter-pg main .s-input button{
@@ -246,7 +361,7 @@ padding: 0}
         font-size: 25px;
         margin-bottom: 13px
     }
-    .select2-container{
+    .filter-pg .select2-container{
         width: 100% !important
     }
     .filter-pg video,
@@ -303,7 +418,71 @@ padding: 0}
     .home-pg .apply-host .right-sec p{
         font-size: 15px
     }
-}
+    .profile-pg .set-language .col-6,
+    .profile-pg .set-birth .col-8{
+        -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+        margin-left: 0 !important
+    }
+    .profile-pg .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        width: 10px !important;
+        height: 10px !important;
+        left: 0 !important
+    }
+    .profile-pg .select2-selection__rendered{
+        padding-left: 10px !important
+    }
+    .profile-pg .profile-sec .left li:nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+    .profile-pg .profile-sec .left li:nth-child(2){
+        margin-left: 5px
+    }
+    .profile-pg .profile-sec .left li:nth-child(2) h2{
+        font-size: 13px
+    }
+    .profile-pg .profile-sec .left li:nth-child(2) h4
+    {
+        font-size: 9px
+    }
+    .profile-pg .profile-sec .right li:nth-child(2) h5 span{
+        font-size: 8px
+    }
+    .profile-pg .profile-sec .name{
+        padding: 10px
+    }
+    .profile-pg .profile-sec .right li h6{
+        font-size: 10px
+    }
+    .profile-pg .earn-footer h5{
+        font-size: 10px;
+        line-height: 18px
+    }
+    .profile-pg .profile-sec .right li:nth-child(1) h5{
+        font-size: 12px
+    }
+    .profile-pg .profile-sec .right li:nth-child(2) h5{
+        width: 100%
+    }
+    .profile-pg .earn-container .text-sec h1{
+        padding: 0;
+        font-size: 15px;
+                margin-bottom: 10px
+
+    }
+    .profile-pg .earn-container .text-sec h6{
+        padding: 0;
+        font-size: 10px;
+        margin-bottom: 10px;
+        line-height: 18px
+    }
+    .profile-pg .profile-sec .top-sec h1{
+        font-size: 30px
+    }
+
+} /*/425*/
 @media(max-width:360px){
 
 }

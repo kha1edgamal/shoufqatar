@@ -1,6 +1,11 @@
 $(document).ready(function () {
 new WOW().init();
 
+    $('#allow').click(function(e){
+        $(this).parent().siblings().find('a.confirm').toggleClass('confirmed');
+        e.preventDefault();
+        return false;
+    })
 
     //Start Owl
     $('.hero-carousel').owlCarousel({
@@ -41,6 +46,36 @@ new WOW().init();
       $('.location-select').select2({
       placeholder:"Enter address, landmark in Qatar",
       width: "50%",
+  });
+     $('.country-select').select2({
+      placeholder:"Select your country",
+      width: "100%",
+  });
+     $('.city-select').select2({
+      placeholder:"Select your city",
+      width: "100%",
+  });
+     $('.language-select').select2({
+      width: "100%",
+
+  });
+    $('.day-select').select2({
+      width: "100%",
+      placeholder: function(){
+        $(this).data('placeholder');
+    }
+  });
+    $('.month-select').select2({
+      width: "100%",
+      placeholder: function(){
+        $(this).data('placeholder');
+    }
+  });
+    $('.year-select').select2({
+      width: "100%",
+      placeholder: function(){
+        $(this).data('placeholder');
+    }
   });
     //End Select Init
 

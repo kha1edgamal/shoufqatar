@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/logo.png">
+    <!--DatePicker-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!--Bootstrap Minified-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--FontAwesome Styles-->
+    <link rel="stylesheet" href="css/all.css">
+    <!--Select2 Style-->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--Scroll-->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Main Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Media Style-->
+    <link rel="stylesheet" href="css/media.css">
+    <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body class="preload">
+    <!--Start Preloader Section-->
+    <div class="screen">
+        <div class="loader">
+            <!--Preloader HTML-->
+        </div>
+    </div>
+    <!--End Preloader Section-->
+    <div class="page-container profile-pg">
+        <!--Start Header Section-->
+        <header class="logged">
+            <div class="custom-container">
+                <!--Screen Nav-->
+                <div class="screen-nav d-flex-sb">
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                    </div>
+                    <div class="list-nav m-auto-0">
+                        <ul>
+                            <li>
+                                <a href="#">Explore Experiences</a>
+                            </li>
+                            <li>
+                                <a href="#">Host Your Experience</a>
+                            </li>
+                            <li class="login">
+                                <a href="login.html">login</a>
+                            </li>
+                            <li class="register">
+                                <a href="register.html">create new account</a>
+                            </li>
+                            <li class="logged-name">
+                                <div class="logged-container">
+                                    <div class="pic">
+                                        <img src="https://tul.imgix.net/content/article/Maia-Cotton.jpg?auto=format,compress&w=1200&h=630&fit=crop" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h5>User Name</h5>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--/Screen Nav-->
+
+                <!--Mobile Nav-->
+                <div class="mobile-nav ">
+                    <div class="d-flex-sb">
+                        <div class="logo">
+                            <img src="imgs/home-logo.png" alt="">
+                        </div>
+                        <div class="toggle-button slide-btn">
+                            <div class="wrapper">
+                                <div class="menu-bar menu-bar-top"></div>
+                                <div class="menu-bar menu-bar-middle"></div>
+                                <div class="menu-bar menu-bar-bottom"></div>
+                            </div>
+
+                        </div>
+                        <div class="logged-name">
+                            <div class="logged-container">
+                                <div class="pic">
+                                    <img src="https://tul.imgix.net/content/article/Maia-Cotton.jpg?auto=format,compress&w=1200&h=630&fit=crop" alt="">
+                                </div>
+                                <div class="name">
+                                    <h5>User Name</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-panel " style="display: none">
+                        <ul>
+                            <li><a href="#">Explore Experience</a></li>
+                            <li><a href="#">Host Your Experience</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Create New Account</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--/Mobile Nav-->
+            </div>
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Profile Section-->
+        <section class="profile-sec s-padding">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="top-sec">
+                            <h1 class="title">My Profile</h1>
+                            <div class="name">
+                                <div class="d-flex-sb">
+                                    <div class="left">
+                                        <ul>
+                                            <li><img src="imgs/user.png" alt=""></li>
+                                            <li>
+                                                <h2>User Name</h2>
+                                                <h4>Cairo, Egypt</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="right m-auto-0">
+                                        <ul>
+                                            <li>
+                                                <h6>Balance</h6>
+                                                <h5>USD 0</h5>
+                                            </li>
+                                            <li>
+                                                <h6>Account</h6>
+                                                <h5><span>Verified</span></h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--/top-sec-->
+                        <div class="middle-sec">
+                            <h4>Personal Information
+                            <a href="#">Edit</a>
+                            </h4>
+                            <div class="data-container">
+                                 <div class="data-view">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="single-row" >
+                                            <div class="infos">
+                                                <img src="imgs/person-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>First Name</span>
+                                                    <span>Salma</span>
+                                                </div>
+                                            </div>
+
+                                        </div><!--/single-row-->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                         <div class="single-row mb-0">
+                                            <div class="infos">
+                                                <img src="imgs/person-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>Last Name</span>
+                                                    <span>Shaaban</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                </div>
+                            </div> <!--/data-view-->
+                            <div class="data-view">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="single-row">
+                                            <div class="infos">
+                                                <img src="imgs/phone-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>Phone Number</span>
+                                                    <span>+20 1287877582</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                         <div class="single-row mb-0">
+                                            <div class="infos">
+                                                <img src="imgs/mail-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>Email</span>
+                                                    <span>salma.shaaban@gmail.com</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                </div>
+                            </div> <!--/data-view-->
+                            <div class="data-view">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="single-row">
+                                            <div class="infos">
+                                                <img src="imgs/calendar-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>Date of Birth</span>
+                                                    <span>12/12/1994</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                         <div class="single-row mb-0">
+                                            <div class="infos">
+                                                <img src="imgs/world-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>Language</span>
+                                                    <span>English, Arabic</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                </div>
+                            </div> <!--/data-view-->
+                            <div class="data-view">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="single-row">
+                                            <div class="infos">
+                                                <img src="imgs/country-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>Country</span>
+                                                    <span>Egypt</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                         <div class="single-row mb-0">
+                                            <div class="infos">
+                                                <img src="imgs/city-icon.png" alt="" class="icon">
+                                                <div class="text">
+                                                    <span>City</span>
+                                                    <span>Cairo</span>
+                                                </div>
+                                            </div>
+                                        </div><!--/single-row-->
+                                    </div>
+                                </div>
+                            </div> <!--/data-view-->
+                            </div>
+                        </div> <!--/middle-section-->
+                        <div class="bottom-sec">
+                            <h4>Complete your profile (1/5)</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width:10%">
+                                    <span class="sr-only">10% Complete</span>
+                                </div>
+                            </div>
+                               <!--Set Profile Picture Modal-->
+                               <div class="modal-container set-pic">
+                                   <div class="modal fade" id="setYourProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                       <div class="modal-dialog modal-dialog-centered" role="document">
+                                           <div class="modal-content">
+                                               <div class="modal-header">
+                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                       <span aria-hidden="true"><img src="imgs/close.png" alt=""></span>
+                                                   </button>
+                                               </div>
+                                               <!--/modal-header-->
+                                               <div class="modal-body">
+                                                   <div class="sub-title">Complete your profile</div>
+                                                   <div class="head-title">Set Your Profile Picture</div>
+                                                   <div class="image-preview">
+                                                       <img src="imgs/user.png" alt="">
+                                                   </div>
+                                                   <div class="paragraph">Maximum picture size is: 8 MB. We suggest the picture to be 400px height by 400px width for better quality.</div>
+                                                   <form action="">
+                                                       <div class="row">
+                                                           <div class="col-6">
+                                                               <input type="file" id="openCamera">
+                                                               <label for="openCamera">open your camera</label>
+                                                           </div>
+                                                           <!--/col-6-->
+                                                           <div class="col-6">
+                                                               <input type="file" id="upload">
+                                                               <label for="upload">upload from computer</label>
+                                                           </div>
+                                                       </div>
+                                                       <!--/row-->
+                                                   </form>
+                                                   <!--/form-->
+
+                                               </div>
+                                               <!--/modal-body-->
+
+                                           </div>
+                                           <!--/modal-content-->
+                                       </div>
+                                       <!--/modal-dialog-->
+                                   </div>
+                                   <!--/modal-->
+                               </div><!--/modal-container-->
+                               <!--/Set Profile Picture Modal-->
+
+                               <!--Set Your Country Modal-->
+                               <div class="modal-container set-country">
+                                   <div class="modal fade" id="setYourCountry" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                       <div class="modal-dialog modal-dialog-centered" role="document">
+                                           <div class="modal-content">
+                                               <div class="modal-header">
+                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                       <span aria-hidden="true"><img src="imgs/close.png" alt=""></span>
+                                                   </button>
+                                               </div>
+                                               <!--/modal-header-->
+                                               <div class="modal-body">
+                                                   <div class="sub-title">Complete your profile</div>
+                                                   <div class="head-title">Select your country</div>
+                                                   <div class="paragraph">Select your country and city from the drop down list below, or allow Shouf to access your location.</div>
+                                                   <form action="">
+                                                       <div class="row">
+                                                           <div class="col-lg-6 col-sm-12">
+                                                               <label for="countrySelect">Country</label>
+                                                               <select class="country-select" name="state" id='category'>
+                                                                    <option value=""></option>
+                                                                    <option value="a001">Qatar</option>
+                                                                    <option value="a002">Egypt</option>
+                                                                    <option value="a003">Abu Dhabi</option>
+                                                                    <option value="a004">Bahrin</option>
+                                                               </select>
+                                                           </div>
+                                                           <!--/col-6-->
+                                                           <div class="col-lg-6 col-sm-12">
+                                                               <label for="countrySelect">City</label>
+                                                               <select class="city-select" name="state" id='category'>
+                                                                    <option value=""></option>
+                                                                    <option value="a001">Cairo</option>
+                                                                    <option value="a003">Alexandria</option>
+                                                                    <option value="a002">Mansoura</option>
+                                                                    <option value="a004">Giza</option>
+                                                               </select>
+                                                           </div>
+                                                       </div>
+                                                       <!--/row-->
+                                                   </form>
+                                                   <div class="location">
+                                                       <div class="row">
+                                                           <div class="col-lg-6 col-sm-12 m-auto">
+                                                               <a href="#" id="allow" class="allow">Allow location</a>
+                                                           </div>
+                                                           <div class="col-lg-6 col-sm-12">
+                                                               <a href="#" class="confirm">confirm location</a>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                                   <!--/form-->
+
+                                               </div>
+                                               <!--/modal-body-->
+
+                                           </div>
+                                           <!--/modal-content-->
+                                       </div>
+                                       <!--/modal-dialog-->
+                                   </div>
+                                   <!--/modal-->
+                               </div> <!--/modal-container-->
+                               <!--/Set Your Country Modal-->
+
+                                <!--Set Your Language Modal-->
+                               <div class="modal-container set-language">
+                                   <div class="modal fade" id="setYourLanguage"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                       <div class="modal-dialog modal-dialog-centered" role="document">
+                                           <div class="modal-content">
+                                               <div class="modal-header">
+                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                       <span aria-hidden="true"><img src="imgs/close.png" alt=""></span>
+                                                   </button>
+                                               </div>
+                                               <!--/modal-header-->
+                                               <div class="modal-body">
+                                                   <div class="sub-title">Complete your profile</div>
+                                                   <div class="head-title">Select your languages</div>
+                                                   <div class="paragraph">Select your languages from the drop down list below, you can add more than one.</div>
+                                                   <form action="">
+                                                       <div class="row">
+                                                           <div class="col-12">
+                                                               <label for="languageSelect">Languages</label>
+                                                               <select data-placeholder="Select Your Languages..." multiple class="language-select" name="state" id='languageSelect'>
+                                                                    <option value="" ></option>
+                                                                    <option value="a001">Arabic</option>
+                                                                    <option value="a002">English</option>
+                                                                    <option value="a003">French</option>
+                                                                    <option value="a004">Deutch</option>
+                                                                    <option value="a001">Arabic</option>
+                                                                    <option value="a002">English</option>
+                                                                    <option value="a003">French</option>
+                                                                    <option value="a004">Deutch</option>
+                                                               </select>
+                                                           </div>
+                                                           <!--/col-6-->
+
+                                                       </div><!--/col-12-->
+                                                       <div class="col-6 offset-6" >
+                                                           <button class=" add-language">Add Language</button>
+                                                       </div>
+                                                       <!--/row-->
+                                                   </form>
+
+                                                   <!--/form-->
+
+                                               </div>
+                                               <!--/modal-body-->
+
+                                           </div>
+                                           <!--/modal-content-->
+                                       </div>
+                                       <!--/modal-dialog-->
+                                   </div>
+                                   <!--/modal-->
+                               </div> <!--/modal-container-->
+                               <!--/Set Your Language Modal-->
+
+
+                                <!--Set Your Birth Modal-->
+                               <div class="modal-container set-birth">
+                                   <div class="modal fade" id="setYourBirth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                       <div class="modal-dialog modal-dialog-centered" role="document">
+                                           <div class="modal-content">
+                                               <div class="modal-header">
+                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                       <span aria-hidden="true"><img src="imgs/close.png" alt=""></span>
+                                                   </button>
+                                               </div>
+                                               <!--/modal-header-->
+                                               <div class="modal-body">
+                                                   <div class="sub-title">Complete your profile</div>
+                                                   <div class="head-title">Add Your Date of Birth</div>
+                                                   <div class="paragraph">Select your day, month and year</div>
+                                                   <form action="">
+                                                       <div class="row">
+                                                           <div class="col-4">
+                                                               <label for="Day">Day</label>
+                                                               <select class="day-select" data-placeholder="DD" name="day" id='day'>
+                                                                    <option value=""></option>
+                                                                    <option value="a001">1</option>
+                                                                    <option value="a002">2</option>
+                                                                    <option value="a003">3</option>
+                                                                    <option value="a004">4</option>
+                                                                    <option value="a005">5</option>
+                                                                    <option value="a005">6</option>
+                                                                    <option value="a005">7</option>
+                                                                    <option value="a005">8</option>
+                                                                    <option value="a005">9</option>
+                                                                    <option value="a005">10</option>
+                                                                    <option value="a005">11</option>
+                                                                    <option value="a005">12</option>
+                                                                    <option value="a005">13</option>
+                                                                    <option value="a005">14</option>
+                                                                    <option value="a005">15</option>
+                                                                    <option value="a005">16</option>
+                                                                    <option value="a005">17</option>
+                                                                    <option value="a005">18</option>
+                                                                    <option value="a005">19</option>
+                                                                    <option value="a005">20</option>
+                                                                    <option value="a005">21</option>
+                                                                    <option value="a005">22</option>
+                                                                    <option value="a005">23</option>
+                                                                    <option value="a005">24</option>
+                                                                    <option value="a005">25</option>
+                                                                    <option value="a005">26</option>
+                                                                    <option value="a005">27</option>
+                                                                    <option value="a005">28</option>
+                                                                    <option value="a005">29</option>
+                                                                    <option value="a005">30</option>
+                                                                    <option value="a005">31</option>
+                                                               </select>
+                                                           </div>
+                                                            <div class="col-4">
+                                                               <label for="month">Month</label>
+                                                               <select class="month-select" data-placeholder="MM" name="month" id='month'>
+                                                                    <option value=""></option>
+                                                                    <option value="a001">1</option>
+                                                                    <option value="a002">2</option>
+                                                                    <option value="a003">3</option>
+                                                                    <option value="a004">4</option>
+                                                                    <option value="a005">5</option>
+                                                                    <option value="a005">6</option>
+                                                                    <option value="a005">7</option>
+                                                                    <option value="a005">8</option>
+                                                                    <option value="a005">9</option>
+                                                                    <option value="a005">10</option>
+                                                                    <option value="a005">11</option>
+                                                                    <option value="a005">12</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="col-4">
+                                                               <label for="year">Year</label>
+                                                               <select class="year-select" data-placeholder="YY" name="year" id='year'>
+                                                                    <option value=""></option>
+                                                                    <option value="a001">2010</option>
+                                                                    <option value="a002">2009</option>
+                                                                    <option value="a003">2008</option>
+                                                                    <option value="a004">2007</option>
+                                                                    <option value="a005">2006</option>
+                                                                    <option value="a005">2005</option>
+                                                                    <option value="a005">2004</option>
+                                                                    <option value="a005">2003</option>
+                                                                    <option value="a005">2002</option>
+                                                                    <option value="a005">2001</option>
+                                                                    <option value="a005">2000</option>
+                                                                    <option value="a005">1999</option>
+                                                                    <option value="a005">1998</option>
+                                                                    <option value="a005">1997</option>
+                                                                    <option value="a005">1996</option>
+                                                                    <option value="a005">1995</option>
+                                                                    <option value="a005">1994</option>
+                                                                    <option value="a005">1993</option>
+                                                                    <option value="a005">1992</option>
+                                                                    <option value="a005">1991</option>
+                                                                    <option value="a005">1990</option>
+                                                                    <option value="a005">1989</option>
+                                                                    <option value="a005">1988</option>
+                                                                    <option value="a005">1987</option>
+                                                                    <option value="a005">1986</option>
+                                                                    <option value="a005">1985</option>
+                                                                    <option value="a005">1984</option>
+                                                                    <option value="a005">1983</option>
+                                                                    <option value="a005">1982</option>
+                                                                    <option value="a005">1981</option>
+                                                                    <option value="a005">1980</option>
+                                                               </select>
+                                                           </div>
+                                                           <!--/col-6-->
+
+                                                       </div><!--/col-12-->
+                                                       <div class="col-8 offset-6 no-gutters" >
+                                                           <button class="add-birth">Add Your Date Of Birth</button>
+                                                       </div>
+                                                       <!--/row-->
+                                                   </form>
+
+                                                   <!--/form-->
+
+                                               </div>
+                                               <!--/modal-body-->
+
+                                           </div>
+                                           <!--/modal-content-->
+                                       </div>
+                                       <!--/modal-dialog-->
+                                   </div>
+                                   <!--/modal-->
+                               </div> <!--/modal-container-->
+                               <!--/Set Your Birth Modal-->
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="single-row" data-toggle="modal" data-target="#setYourProfile">
+                                            <img class='ico' src="imgs/camera-icon.png" alt="">
+                                            <h5>set profile picture
+                                            <span>Your photo will make it easier for your hosts to easily recognize you.</span>
+                                            </h5>
+                                            <div class="icon "><i class="fa fa-check"></i></div> <!--Add Here 'Checked' class to make the check green -->
+
+                                        </div> <!--/single-row-->
+                                        <div class="single-row" data-toggle="modal" data-target="#setYourCountry" >
+                                            <img class='ico' src="imgs/location-icon.png" alt="">
+                                            <h5>SELECT YOUR COUNTRY & CITY
+                                            <span>Adding your location will help us view interesting experiences around you.</span>
+                                            </h5>
+                                            <div class="icon "><i class="fa fa-check"></i></div> <!--Add Here 'Checked' class to make the check green -->
+                                        </div> <!--/single-row-->
+                                        <div class="single-row" data-toggle="modal" data-target="#setYourLanguage">
+                                            <img class='ico' src="imgs/world-icon.png" alt="">
+                                            <h5>SELECT YOUR SPEAKING LANGUAGE
+                                            <span>Adding your speaking language(s) will us help customize the content.</span>
+                                            </h5>
+                                            <div class="icon "><i class="fa fa-check"></i></div> <!--Add Here 'Checked' class to make the check green -->
+                                        </div> <!--/single-row-->
+                                        <div class="single-row" data-toggle="modal" data-target="#setYourBirth">
+                                            <img class='ico' src="imgs/calendar-icon.png" alt="">
+                                            <h5>ADD YOUR BIRTH DATE
+                                            <span>Some experiences require certain age to join.</span>
+                                            </h5>
+                                            <div  class="icon "><i class="fa fa-check"></i></div> <!--Add Here 'Checked' class to make the check green -->
+                                        </div> <!--/single-row-->
+                                    </div> <!--/col-12-->
+                                </div> <!--/row-->
+                        </div> <!--/bottom-sec-->
+                        <div class="saved-cards">
+                            <h4>saved cards</h4>
+                            <ul>
+                                <li>
+                                    <div class="d-flex-sb">
+                                        <div class="card-logo">
+                                            <img src="imgs/Mastercard.png" alt="">
+                                            <span>mastercard</span>
+                                        </div>
+                                        <div class="delet m-auto-0">
+                                            <a href="#">Delete Card</a>
+                                        </div>
+                                    </div><!--/d-flex-sb-->
+
+                                    <div class="acc-number">
+                                        <h2>1234 5678 9123 4668</h2>
+                                    </div><!--/acc-number-->
+                                    <div class="d-flex-sb">
+                                        <div class="acc-name">
+                                            ahmed mohamed mahmoud
+                                        </div> <!--/acc-name-->
+                                        <div class="date">
+                                            03/22
+                                        </div><!--/daate-->
+                                    </div><!--/d-flex-sb-->
+                                </li>
+                                <li>
+                                    <div class="d-flex-sb">
+                                        <div class="card-logo">
+                                            <img src="imgs/visa.png" alt="">
+                                            <span>visa</span>
+                                        </div>
+                                        <div class="delet m-auto-0">
+                                            <a href="#">Delete Card</a>
+                                        </div>
+                                    </div><!--/d-flex-sb-->
+
+                                    <div class="acc-number">
+                                        <h2>1234 5678 9123 4668</h2>
+                                    </div><!--/acc-number-->
+                                    <div class="d-flex-sb">
+                                        <div class="acc-name">
+                                            ahmed mohamed mahmoud
+                                        </div> <!--/acc-name-->
+                                        <div class="date">
+                                            03/22
+                                        </div><!--/daate-->
+                                    </div><!--/d-flex-sb-->
+                                </li>
+                            </ul>
+                        </div> <!--/saved-cards-->
+                    </div><!--/col-7-->
+
+                    <div class="col-lg-4">
+                        <div class="earn-sec">
+                            <h4>refer & earn</h4>
+                            <div class="content">
+                                <div class="earn-container">
+                                <div class="pic">
+                                    <img class="jump" src="imgs/earn.png" alt="">
+                                </div> <!--/pic-->
+                                <div class="text-sec text-center">
+                                    <h1>
+                                        Refer Shouf to your friends and win a cash reward of USD 5.00!
+                                    </h1>
+                                    <h6>
+                                        Share this coupon code with your friends and after they book their first experience using it, both of you will get <strong>USD 5.00*</strong>
+                                    </h6>
+                                </div> <!--/text-sec-->
+                                <div class="coupon">
+                                    <div class="d-flex-sb">
+                                        <h2 class="code">
+                                            rf18cx
+                                        </h2>
+                                        <a href="#" class="cpy-code">copy code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="earn-footer">
+                               <div class="row">
+                                   <div class="col-3">
+                                        <img src="imgs/earn-footer.png" alt="">
+                                   </div>
+                                   <div class="col-9">
+                                       <h5>
+                                            To understand how friend referral works, check our <a href="#">Invitation Rules</a>
+                                            <span>*Terms and conditions applies.</span>
+                                        </h5>
+                                   </div>
+                               </div>
+
+                            </div>
+                            </div>
+
+                        </div> <!--/earn-sec-->
+                    </div><!--/col-5-->
+
+                </div><!--/row-->
+            </div><!--/container-->
+        </section>
+        <!--End Profile Section-->
+
+
+        <!--Start Footer-->
+        <footer class="text-center cpy-footer">
+            <h5>Copyright 2020, Shouf Co, Inc</h5>
+        </footer>
+        <!--End Footer-->
+    </div>
+
+
+
+
+    <!--Jquery Minified JS-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--Owl Carousel JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Select2 Script-->
+    <script src='js/select2.min.js'></script>
+    <!--WOW JS-->
+    <script src="js/wow.min.js"></script>
+    <!--Bootstrap Minified JS-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--ScrollBar-->
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <!--Main Script-->
+    <script src="js/script.js"></script>
+
+    <script>
+        $('.datepicker').datepicker({
+            format: 'mm/dd/yyyy',
+            startDate: '-3d'
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
