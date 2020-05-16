@@ -1,6 +1,7 @@
 $(document).ready(function () {
 new WOW().init();
 
+
     $('#allow').click(function(e){
         $(this).parent().siblings().find('a.confirm').toggleClass('confirmed');
         e.preventDefault();
@@ -151,4 +152,18 @@ new WOW().init();
   $toggleButton.on('click', function() {
     $(this).toggleClass('button-open');
   });
+        /*Loading Before Animation*/
+var content = document.getElementById("myContent");
+content.classList.add('js-loading');
+window.addEventListener("load", showPage);
+
+function showPage() {
+    content.classList.remove('js-loading');
+}
+    /*PreLoader Script*/
+$(window).load(function () {
+
+    $(".screen").fadeOut("slow");
+});
+
 });

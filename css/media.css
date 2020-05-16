@@ -183,6 +183,13 @@ padding: 0}
     .profile-pg .profile-sec .earn-sec .earn-footer img{
         width: 100%
     }
+    .exp-pg .exp-sec .videos .pic{
+        margin-bottom: 30px
+    }
+    .exp-pg .exp-sec .our-gallery{
+        width: 100%
+    }
+
 } /*/991*/
 @media(max-width:768px){
     .filter-pg main .top-desc p{
@@ -242,6 +249,9 @@ font-size: 13px;
     }
     .profile-pg .middle-sec .data-container{
         padding: 10px
+    }
+    .exp-pg .exp-sec .title .stars {
+        display: block;
     }
 }/*/575*/
 @media(max-width:520px){
