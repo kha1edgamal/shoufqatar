@@ -189,6 +189,14 @@ padding: 0}
     .exp-pg .exp-sec .our-gallery{
         width: 100%
     }
+    .exp-pg .videos,
+.exp-pg .info,
+.exp-pg .exp-desc,
+.exp-pg .steps,
+.exp-pg .nearest-dates,
+.exp-pg .exp-sec .reviews{
+    padding-right: 0
+}
 
 } /*/991*/
 @media(max-width:768px){

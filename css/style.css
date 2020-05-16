@@ -2483,13 +2483,12 @@ padding: 0 30px
     border-radius: 50%;
     margin-right: 20px;
     position: relative;
-    z-index: 1
-}
-.exp-pg .exp-sec .steps .step-container .num span{
-    color: #fff;
+    z-index: 1;
+        color: #fff;
     font-family: p-sb;
     font-size: 17px;
 }
+
 .exp-pg .exp-sec .steps .step-container .step h4{
     color: #34495E;
     font-family: p-sb;
@@ -2735,6 +2734,17 @@ display: flex;
 }
 .exp-pg .exp-sec .our-gallery .col-4,
 .exp-pg .exp-sec .our-gallery .col-12{
+    padding-right: 0
+}
+.exp-pg .videos,
+.exp-pg .info,
+.exp-pg .exp-desc,
+.exp-pg .steps,
+.exp-pg .nearest-dates,
+.exp-pg .exp-sec .reviews{
+    padding-right: 200px
+}
+.exp-pg .nearest-dates.right{
     padding-right: 0
 }
 /*End Experience Page Style*/
