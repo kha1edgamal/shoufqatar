@@ -263,6 +263,13 @@ font-size: 13px;
     }
 }/*/575*/
 @media(max-width:520px){
+    .exp-pg .tags .s-row span.badge{
+            width: 60px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 8px;
+        padding: 0;
+    }
     .login-register-pg main{
         width: 100%
     }

@@ -2359,9 +2359,19 @@ padding: 0 30px
 .exp-pg .exp-sec .title h1{
     font-family: p-bold;
     font-size: 37px;
-    color: #1A242E;
-    display: inline-block;
-    margin-right: 15px
+    color: #ED4D12;
+    margin-bottom: 20px
+}
+.exp-pg .exp-sec .title .host{
+    color: #95A5A6;
+    font-size: 17px;
+    vertical-align: baseline;
+    margin-right: 15px;
+    font-family: helvitica;
+    font-weight: normal
+}
+.exp-pg .exp-sec .title .host strong{
+    color: #000000
 }
 .exp-pg .exp-sec .title .badge{
     background: #76C258;
@@ -2413,6 +2423,7 @@ padding: 0 30px
     margin-top: 50px;
     margin-bottom: 50px
 }
+/*
 .exp-pg .exp-sec  .desc-title span{
     width: 32px;
     height: 32px;
@@ -2432,10 +2443,10 @@ padding: 0 30px
     height: 18px;
     object-fit: cover
 }
+*/
 .exp-pg .exp-sec .desc-title h1{
     color: #1A242E;
     text-transform: capitalize;
-    margin-left: 15px;
     font-size: 22px;
     font-family: p-sb;
     line-height: 33px
@@ -2478,7 +2489,7 @@ padding: 0 30px
  width: 43px;
     height: 43px;
     line-height: 43px;
-    background: #34495E;
+    background: #ED4D12;
     text-align: center;
     border-radius: 50%;
     margin-right: 20px;
@@ -2506,7 +2517,8 @@ padding: 0 30px
 .exp-pg .exp-sec .reviews .host-sec > h6,
 .exp-pg .exp-sec .reviews .reviews-sec h6,
 .exp-pg .exp-sec .map-location h6,
-.exp-pg .exp-sec .our-gallery h6{
+.exp-pg .exp-sec .our-gallery h6,
+.exp-pg .exp-sec .tags h6{
     color: #1A242E;
     font-family: p-sb;
     font-size: 17px;
@@ -2583,7 +2595,9 @@ padding: 0 30px
 }
 
 .exp-pg .exp-sec .reviews {
-    margin-top: 50px
+    margin-top: 50px;
+    background: #FAFAFA;
+    padding: 30px 0
 }
 .exp-pg .exp-sec .reviews .host-sec .user-pic{
     width: 37px;
@@ -2619,20 +2633,29 @@ padding: 0 30px
     margin-bottom: 50px;
 }
 .exp-pg .exp-sec .reviews .reviews-sec .s-review{
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     position: relative
+}
+.exp-pg .exp-sec .reviews .reviews-sec .s-review:not(:last-of-type):after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    background: #ECF0F1;
+    width: 50%;
+    height: 1px;
 }
 .exp-pg .exp-sec .reviews .reviews-sec .s-review .user-pic{
      width: 37px;
     height: 37px;
     line-height: 37px;
-    border-radius: 50%;
+    border-radius: 6px;
     margin-right: 15px
 }
 .exp-pg .exp-sec .reviews .reviews-sec .s-review .user-pic img{
     max-width: 100%;
     max-height: 100%;
-    border-radius: 50%;
+    border-radius: 6px;
 }
 .exp-pg .exp-sec .reviews .reviews-sec .s-review .user-details h4{
     color: #1A242E;
@@ -2656,12 +2679,17 @@ padding: 0 30px
     margin-top: 10px;
 }
 .exp-pg .exp-sec .reviews .reviews-sec .s-review .time{
-    position: absolute;
-    right: 0;
-    top: 0;
     color: #95A5A6;
     font-size: 13px;
     font-family: p-reg
+}
+.exp-pg .exp-sec .reviews .reviews-sec .s-review .name-time .name{
+    font-family: p-med;
+    font-size: 15px;
+    margin-bottom: 5px
+}
+.exp-pg .exp-sec .reviews .reviews-sec .s-review .stars i{
+     color: #FFCE00
 }
 
 .exp-pg .exp-sec .lightbox
@@ -2706,7 +2734,7 @@ display: flex;
 
 }
 .exp-pg .exp-sec .our-gallery {
-    width: 280px;
+
 }
 .exp-pg .exp-sec .our-gallery .big-pic{
     width: 100%;
@@ -2732,7 +2760,7 @@ display: flex;
     object-fit: cover;
     border-radius: 8px
 }
-.exp-pg .exp-sec .our-gallery .col-4,
+.exp-pg .exp-sec .our-gallery .col-3,
 .exp-pg .exp-sec .our-gallery .col-12{
     padding-right: 0
 }
@@ -2746,5 +2774,93 @@ display: flex;
 }
 .exp-pg .nearest-dates.right{
     padding-right: 0
+}
+.exp-pg .about-host .host-logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 10px
+}
+.exp-pg .about-host .host-logo img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.exp-pg .about-host .host-details .name{
+    font-family: p-med;
+    font-size: 17px;
+    margin-bottom: 5px
+}
+.exp-pg .about-host .host-details .role{
+    font-family: p-reg;
+    font-size: 13px;
+    color: #95A5A6
+}
+.exp-pg .about-host p{
+    margin-top: 20px;
+    color: #34495E;
+    font-family: p-reg;
+    font-size: 17px;
+    line-height: 25.5px;
+    margin-bottom: 20px;
+}
+.exp-pg .tags{
+    margin: 40px 0
+}
+.exp-pg .tags .d-flex{
+    justify-content: space-between
+}
+.exp-pg .tags .s-row:not(:last-of-type){
+    margin-bottom: 15px
+}
+.exp-pg .tags .s-row span.badge{
+        background: #ED4D12;
+    border-radius: 2px;
+    color: #fff;
+    padding: 8px;
+    text-transform: uppercase
+}
+.exp-pg .apply-as-host{
+        background: #1A242E;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 12px;
+}
+.exp-pg .apply-as-host h2{
+    font-size: 17px;
+    font-family: p-bold;
+
+}
+.exp-pg .apply-as-host h2 span{
+    display: block;
+    color: #2DC972;
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 30px
+
+}
+.exp-pg .apply-as-host a{
+    background: #2DC972;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: p-med;
+    font-size: 17px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #2DC972;
+        transition: all .3s
+
+}
+.exp-pg .apply-as-host a:hover{
+    border-color: #2DC972;
+    color: #2DC972;
+    background: transparent;
+    transition: all .3s
 }
 /*End Experience Page Style*/
